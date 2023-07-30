@@ -894,9 +894,23 @@ footer {
 .contenedorCartasProduc{
   margin-top: 10vh;
 }
+@media (max-width: 768px){
+  .DobleCartaProd h2{
+    font-size: 2rem;
+  }
+  .DobleCartaProd p{
+    font-size: 1.6rem;
+  }
+}
 @media (max-width: 480px){
   .contenedorCartasProduc{
     width: 80vw;
+  }
+  .DobleCartaProd h2{
+    font-size: 1.9rem;
+  }
+  .DobleCartaProd p{
+    font-size: 1.4rem;
   }
 }
 /*galeria seccion*/
@@ -930,11 +944,13 @@ footer {
   border: 3px solid rgb(11, 1, 1);
   filter: brightness(60%);
 }
-
 @media (max-width: 480px){
 .imagenGrilla{
     height: 40vh;
     width: 80vw;
+  }
+  .volverProd input{
+    font-size: 1.7rem;
   }
 }
 .volverProd{
@@ -951,10 +967,13 @@ footer {
   font-size: 2rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 60vw;
+  border: 2px solid rgb(226, 230, 15);
+  border-radius: 6px;
 }
 .volverProd input:hover{
   background-color: rgb(226, 230, 15);
   color: rgb(11, 1, 1);
+  border: 2px solid rgb(11, 1, 1);
 }
 /*FIN PÁGINA PRODUCTO*/
 /*COMIENZO PÁGINA HISTORIA*/
