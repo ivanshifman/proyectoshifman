@@ -10,7 +10,6 @@ html{
     font-size: 62.5%;
 }
 
-
 /*comienzo header mas pagina inicio*/
   header {
     background-color: rgb(11, 1, 1);
@@ -22,17 +21,14 @@ html{
     top: 0;
     z-index: 1000;
   }
-
 .nomlog {
     height: 150px;
     width: 150px;
 }
-
 .nomlog img {
     height: 100%;
     width: 100%;
 }
-
 .buscarp{
   width: 250px;
   height: 10vh;
@@ -40,7 +36,6 @@ html{
   align-items: center;
   justify-content: center;
 }
-
 #search{
     border: 3px solid rgb(200, 241, 13);
     background-color: rgb(11, 1, 1);
@@ -59,40 +54,33 @@ html{
   .buscarp input[type="text"]:focus {
     border: 4px solid rgb(200, 241, 13);
   }
-  
 .buscarp label span{
     color: rgb(200, 241, 13);
     height: 20px;
 }
 
 /*secciones en header*/
-
   .lista ul {
     padding: 0;
     margin: 0;
     display: flex;
   }
-  
   .lista li {
     border-left: 2px solid rgb(200, 241, 13);
     padding: 5px 10px;
   }
-  
   .lista li:first-child {
     border-left: none;
   }
-  
   .lista li:last-child {
     border-right: none;
   }
-  
   .lista li a {
     color: rgb(200, 241, 13);
     font-size: 2.2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
   }
-  
   .lista li:hover {
     background-color: rgb(200, 241, 13);
   }
@@ -101,7 +89,6 @@ html{
   }
 
 /*media del header*/
-
 @media (max-width: 768px) {
   header{
     height: 30vh;
@@ -241,7 +228,6 @@ html{
   color: rgb(241, 180, 13);
   text-align: center;
 }
-
 .primer, .segundo, .tercero{
   display: flex;
   justify-content: space-evenly;
@@ -257,13 +243,11 @@ html{
 .tercero{
   grid-area: tercero;
 }
-
 .conteuno, .contedos, .contetres{
   width: 35vw;
   height: 50vh;
   margin-left: 7vw;
 }
-
 .primeri, .segundi, .terceri{
   position: relative;
   width: 35vw;
@@ -273,7 +257,6 @@ html{
   box-shadow: 2px 2px 5px rgba(11, 1, 1, 0.5);
   cursor: pointer;
 }
-
 .conteuno figure img{
   width: 100%;
   height: 100%;
@@ -301,7 +284,6 @@ html{
   font-size: 2.3rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .capauno p, .capados p, .capatres p{
   font-size: 1.7rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -330,7 +312,6 @@ html{
   visibility: visible;
   opacity: 1;
 }
-
 .paruno, .pardos, .partres{
   display: flex;
   flex-direction: column;
@@ -338,7 +319,6 @@ html{
   justify-content: space-evenly;
   height: 100%;
 }
-
 .paruno h3, .pardos h3, .partres h3{
   font-size: 2.8rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -349,7 +329,6 @@ html{
   border-radius: 6px;
   padding: 5px 10px;
 }
-
 .paruno p, .pardos p, .partres p{
   font-size: 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -405,14 +384,11 @@ html{
 /*CARRUSEL DE BOOTSTRAP*/
 .caruseluno{
   background-image: linear-gradient(to bottom, rgba(232, 248, 7, 0.884), rgba(239, 255, 10, 0.856));
-
 }
-
-.carousel-item {
+.itemIndex {
   height: 500px;
 }
-
-.carousel-item .container{
+.itemIndex .contenedorRes{
   width: 100%;
   height: 100%;
   display: flex;
@@ -420,13 +396,11 @@ html{
   align-items: center;
   justify-content: center;
 }
-
 .testimonio-imagen{
   height: 150px;
   width: 180px;
   margin: 10px 10px 20px 10px;
 }
-
 .testimonio-texto{
   max-width: 70%;
   font-size: 2.1rem;
@@ -453,7 +427,6 @@ html{
     font-size: 1.5rem;
   }
 }
-
 /*comienzo de subseccion*/
 
 .finalIndex{
@@ -539,7 +512,6 @@ html{
 }
 
 /*comienzo media subseccion*/
-
 @media (max-width: 768px){
   .IndexProducto h2, .IndexHistoria h2{
     font-size: 2.4rem;
@@ -619,7 +591,6 @@ html{
   font-size: 25px;
   z-index: 9000;
 }
-
 #btn-mas:checked~ .redes a{
   margin-bottom: 10px;
   opacity: 1;
@@ -646,7 +617,6 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
-
 .derecho{
   text-align: center;
   display: flex;
@@ -667,7 +637,6 @@ footer {
   text-decoration: underline;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .newle{
   display: flex;
   flex-direction: column;
@@ -756,7 +725,7 @@ footer {
   .enviar input{
     border: 1px solid rgb(11, 1, 1);
     border-radius: 4px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .enviar input:hover{
     border: 1px solid rgb(200, 241, 13);
@@ -789,7 +758,7 @@ footer {
   }
   .enviar input{
     border-radius: 3px;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
   .termin{
     display: none;
@@ -875,7 +844,6 @@ footer {
   height: 15rem;
   width: 100%;
   border-radius: 7px;
-
 }
 .DobleCartaProd{
   background-color: rgb(11, 1, 1);
@@ -977,6 +945,142 @@ footer {
 }
 /*FIN PÁGINA PRODUCTO*/
 /*COMIENZO PÁGINA HISTORIA*/
+
+.tituloHistoria {
+  height: 50vh;
+  background-image: url(https://px.fotos.cdn.0223.com.ar/f/082022/1659463256170.webp?cw=1070&ch=602&extw=jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.subTituloHisto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 50vh;
+  background-color: rgba(11, 1, 1, 0.8);
+  z-index: 2;
+}
+.subTituloHisto h1 {
+  font-size: 4.3rem;
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  text-decoration: underline;
+  z-index: 3;
+  text-align: center;
+}
+.subTituloHisto h3{
+  font-size: 2.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  z-index: 3;
+  text-align: center;
+}
+/*media del titulo historia*/
+@media (max-width: 768px){
+  .tituloHistoria{
+    height: 40vh;
+  }
+  .subTituloHisto{
+    height: 40vh;
+  }
+  .subTituloHisto h1{
+    font-size: 3rem;
+  }
+  .subTituloHisto h3{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px){
+    .subTituloHisto h1{
+      font-size: 2rem;
+    }
+    .subTituloHisto h3{
+      font-size: 1rem;
+    }
+}
+
+/*comienzo main Historia*/
+.cartaHistoria{
+  font-size: 25rem;
+  border: 2px solid rgb(226, 230, 15);
+  background-color: rgb(11, 1, 1);
+  border-radius: 5px;
+  padding-top: 10px;
+}
+.cartaHistoria img{
+  height: 20rem;
+  width: 100%;
+  border-radius: 7px;
+}
+.DobleCartaHisto{
+  background-color: rgb(11, 1, 1);
+}
+.DobleCartaHisto h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(226, 230, 15);
+  text-decoration: underline;
+  font-size: 2.3rem;
+}
+.DobleCartaHisto p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(226, 230, 15);
+  font-size: 1.7rem;
+}
+
+
+
+
+
+
+/*carrusel y seccion ultima historia*/
+#carruselHisto{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+  background-image: linear-gradient(to top, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856));
+}
+.ultimoTituloHisto{
+  display: flex;
+  background-color: rgb(11, 1, 1);
+  border: 2px solid rgb(241, 180, 13);
+  padding: 5px 10px 5px 10px;
+}
+.ultimoTituloHisto h3{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2.3rem;
+  color: rgb(241, 180, 13);
+}
+.itemHisto{
+  width: 45vw;
+  height: 40vh;
+}
+.itemHisto img{
+  width: 100%;
+  height: 100%;
+}
+.caruselHistoUno{
+  border: 5px solid rgb(11, 1, 1);
+}
+@media(max-width: 768px){
+  .itemHisto{
+    width: 65vw;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 
