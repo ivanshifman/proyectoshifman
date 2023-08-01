@@ -344,6 +344,43 @@ html{
 
 /*media de seccion*/
 @media (max-width: 768px){
+  #primero{
+    grid-template-rows: 10vh 90vh 90vh 90vh;
+    height: 360vh;
+    row-gap: 20vh;
+  }
+  .primer, .segundo, .tercero{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .conteuno, .contedos, .contetres{
+    width: 80vw;
+    margin-right: 7vw;
+  }
+  .primeri, .segundi, .terceri{
+    width: 100%;
+  }
+  .capauno h3, .capados h3, .capatres h3{
+    font-size: 2.5rem;
+  }
+  .capauno p, .capados p, .capatres p{
+    font-size: 1.9rem;
+  }
+  .paruno h3, .pardos h3, .partres h3{
+    font-size: 2.5rem;
+  }
+  .paruno p, .pardos p, .partres p{
+    font-size: 1.9rem;
+    padding: 3px;
+  }
+}
+@media (max-width: 480px){
+  #primero{
+    height: 340vh;
+    row-gap: 10vh;
+  }
   .capauno h3, .capados h3, .capatres h3{
     font-size: 1.8rem;
   }
@@ -351,34 +388,17 @@ html{
     font-size: 1.5rem;
   }
   .paruno h3, .pardos h3, .partres h3{
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
   .paruno p, .pardos p, .partres p{
-    font-size: 1.7rem;
-    padding: 3px;
-  }
-}
-@media (max-width: 480px){
-  .capauno h3, .capados h3, .capatres h3{
-    font-size: 1.4rem;
-  }
-  .capauno p, .capados p, .capatres p{
-    font-size: 1.1rem;
-  }
-  .paruno h3, .pardos h3, .partres h3{
-    font-size: 1.6rem;
-  }
-  .paruno p, .pardos p, .partres p{
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     padding: 3px;
   }
   .conteuno, .contedos, .contetres{
-    width: 30vh;
     height: 40vh;
   }
   .primeri, .segundi, .terceri{
-    width: 30vh;
-    height: 40vh;
+    height: 100%;
   }
 }
 
@@ -611,9 +631,11 @@ html{
 /*media boton flotante*/
 
 
+
+
 /*COMIENZO FOOTER*/
 footer {
-  height: 40vh;
+  height: 45vh;
   background-color: rgb(11, 1, 1);
   display: flex;
   justify-content: space-evenly;
@@ -697,6 +719,11 @@ footer {
 }
 
 /*media del footer*/
+@media(max-width: 1024px){
+  footer{
+    height: 50vh;
+  }
+}
 @media (max-width: 768px){
   .derecho small p{
     font-size: 1.1rem;
