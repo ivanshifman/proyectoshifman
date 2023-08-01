@@ -89,12 +89,14 @@ html{
   }
 
 /*media del header*/
+@media(max-width: 1024px){
+  .buscarp{
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   header{
     height: 30vh;
-  }
-  .buscarp {
-      display: none;
   }
   .lista ul{
     flex-direction: column;
@@ -764,45 +766,27 @@ footer {
     display: none;
   }
 }
-
 /*FINAL INICIO*/
 /*COMIENZO PÁGINA PRODUCTO*/
-
 .productoProd {
   height: 50vh;
   background-image: url(https://img2.rtve.es/imagenes/10-cosas-sabias-sobre-chocolate/1674817846688.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
 }
 .subProductoProd{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
   height: 50vh;
   background-color: rgba(11, 1, 1, 0.8);
-  z-index: 2;
 }
 .subProductoProd h1 {
   font-size: 4.3rem;
-  color: #fff;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-style: italic;
-  text-decoration: underline;
-  z-index: 3;
-  text-align: center;
 }
 .subProductoProd h3{
   font-size: 2.2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
-  z-index: 3;
-  text-align: center;
 }
-
 /*media del titulo producto*/
 @media (max-width: 768px){
   .productoProd{
@@ -826,24 +810,18 @@ footer {
       font-size: 1rem;
     }
 }
-
 /*primera seccion producto*/
 #seccioncardsProd{
   background-image: linear-gradient(to bottom, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856));
-  padding-top: 10px;
   padding-bottom: 15vh;
 }
 .cartaProd{
   font-size: 20rem;
-  border: 2px solid rgb(226, 230, 15);
   background-color: rgb(11, 1, 1);
-  border-radius: 5px;
-  padding-top: 10px;
 }
 .cartaProd img{
   height: 15rem;
   width: 100%;
-  border-radius: 7px;
 }
 .DobleCartaProd{
   background-color: rgb(11, 1, 1);
@@ -851,7 +829,6 @@ footer {
 .DobleCartaProd h2{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgb(226, 230, 15);
-  text-decoration: underline;
   font-size: 2.3rem;
 }
 .DobleCartaProd p{
@@ -882,19 +859,12 @@ footer {
   }
 }
 /*galeria seccion*/
-
 #seccionProdDos{
   background-image: linear-gradient(to top, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856));
-  padding-top: 10px;
   padding-bottom: 15vh;
 }
 .novedadProd{
   background-color: rgb(11, 1, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2px;
-  padding-bottom: 2px;
 }
 .novedadProd h2{
   color: rgb(241, 180, 13);
@@ -904,7 +874,6 @@ footer {
 .imagenGrilla{
   height: 30vh;
   width: 35vw;
-  display: flex;
 }
 .imagenGrilla img{
   height: 100%;
@@ -922,12 +891,7 @@ footer {
   }
 }
 .volverProd{
-  background-color: rgb(129 96 7);
-  padding-top: 10px;
-  padding-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: rgb(129, 96, 7);
 }
 .volverProd input{
   background-color: rgb(11, 1, 1);
@@ -936,7 +900,6 @@ footer {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 60vw;
   border: 2px solid rgb(226, 230, 15);
-  border-radius: 6px;
 }
 .volverProd input:hover{
   background-color: rgb(226, 230, 15);
@@ -945,40 +908,24 @@ footer {
 }
 /*FIN PÁGINA PRODUCTO*/
 /*COMIENZO PÁGINA HISTORIA*/
-
 .tituloHistoria {
   height: 50vh;
   background-image: url(https://px.fotos.cdn.0223.com.ar/f/082022/1659463256170.webp?cw=1070&ch=602&extw=jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
 }
 .subTituloHisto{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
   height: 50vh;
   background-color: rgba(11, 1, 1, 0.8);
-  z-index: 2;
 }
 .subTituloHisto h1 {
   font-size: 4.3rem;
-  color: #fff;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-style: italic;
-  text-decoration: underline;
-  z-index: 3;
-  text-align: center;
 }
 .subTituloHisto h3{
   font-size: 2.2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
-  z-index: 3;
-  text-align: center;
 }
 /*media del titulo historia*/
 @media (max-width: 768px){
@@ -1007,26 +954,20 @@ footer {
 /*comienzo main Historia*/
 #primerHistoria, #terceroHistoria{
   background-image: linear-gradient(to bottom, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856));
-  padding-top: 10px;
   padding-bottom: 15vh;
 }
 #segundoHistoria{
   background-image: linear-gradient(to top, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856));
-  padding-top: 10px;
   padding-bottom: 15vh;
 }
 .cartaHistoria{
   font-size: 25rem;
-  border: 4px solid rgb(226, 230, 15);
   background-color: rgb(11, 1, 1);
-  border-radius: 10px;
-  padding-top: 10px;
   margin-top: 10vh;
 }
-.cartaHistoria img{
+.imagenCartaHisto{
   height: 20rem;
   width: 100%;
-  border-radius: 7px;
   filter: brightness(80%);
 }
 @media(max-width: 480px){
@@ -1040,7 +981,6 @@ footer {
 .DobleCartaHisto h3{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgb(226, 230, 15);
-  text-decoration: underline;
   font-size: 2.3rem;
 }
 .DobleCartaHisto p{
@@ -1065,17 +1005,10 @@ footer {
     width: 70vw;
   }
 }
-.parImgHisto{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin: 0 0 5px 7px;
-}
 .parImgHisto h3{
   color: rgb(226, 230, 15);
   font-size: 2.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
 }
 .parImgHisto p{
   color: rgb(226, 230, 15);
@@ -1114,18 +1047,12 @@ footer {
 }
 /*carrusel y seccion ultima historia*/
 #carruselHisto{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
   height: 70vh;
   background-image: linear-gradient(to top, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856));
 }
 .ultimoTituloHisto{
-  display: flex;
   background-color: rgb(11, 1, 1);
-  border: 2px solid rgb(241, 180, 13);
-  padding: 5px 10px 5px 10px;
+  border: 4px solid rgb(241, 180, 13);
 }
 .ultimoTituloHisto h3{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -1148,8 +1075,8 @@ footer {
     width: 65vw;
   }
 }
-/*FIN PÁGINA PRODUCTO*/
-/*COMIENZO PÁGINA HISTORIA*/
+/*FIN PÁGINA HISTORIA*/
+/*COMIENZO PÁGINA PREGUNTA*/
 
 .tituloPreg {
   height: 50vh;
@@ -1157,35 +1084,20 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
 }
 .subTituloPreg{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
   height: 50vh;
   background-color: rgba(11, 1, 1, 0.8);
-  z-index: 2;
 }
 .subTituloPreg h1 {
   font-size: 4.3rem;
-  color: #fff;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-style: italic;
-  text-decoration: underline;
-  z-index: 3;
-  text-align: center;
 }
 .subTituloPreg h3{
   font-size: 2.2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
-  z-index: 3;
-  text-align: center;
 }
-/*media del titulo historia*/
+/*media del titulo pregunta*/
 @media (max-width: 768px){
   .tituloPreg{
     height: 40vh;
@@ -1208,6 +1120,8 @@ footer {
       font-size: 1rem;
     }
 }
+/*comienzo main pregunta*/
+
 
 
 
