@@ -14,7 +14,6 @@ html{
   header {
     background-color: rgb(11, 1, 1);
     height: 20vh;
-    padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -179,10 +178,10 @@ html{
     font-size: 1.6rem;
   }
   .triplecont{
-    padding: 5px;
+    padding: 3px 0 3px 0;
   }
   .triplecont h2{
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 480px){
@@ -193,7 +192,7 @@ html{
     font-size: 0.9rem;
   }
   .triplecont{
-    padding: 1px;
+    padding: 0px;
   }
   .triplecont h2{
     font-size: 1.1rem;
@@ -220,7 +219,7 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 5px 0 5px 0;
   grid-area: triple;
 
 }
@@ -614,7 +613,7 @@ html{
 
 /*COMIENZO FOOTER*/
 footer {
-  height: 36vh;
+  height: 40vh;
   background-color: rgb(11, 1, 1);
   display: flex;
   justify-content: space-evenly;
@@ -658,6 +657,10 @@ footer {
 .textFo span{
   color: rgb(200, 241, 13);
   font-size: 2.2rem;
+}
+.textFo{
+  display: flex;
+  flex-direction: column;
 }
 #nombre, #email{
   color: rgb(200, 241, 13);
@@ -733,6 +736,14 @@ footer {
     border: 1px solid rgb(200, 241, 13);
   }
 }
+@media(max-width: 576px){
+  .termin{
+    display: none;
+  }
+  .newle{
+    margin-left: 1vw;
+  }
+}
 @media (max-width:480px){
   .derecho small p{
     font-size: 0.8rem;
@@ -746,9 +757,7 @@ footer {
   .textFo span{
     font-size: 1rem;
   }
-  .newle{
-    margin-left: 1vw;
-  }
+  
   #nombre, #email{
     border: 1px solid rgb(200, 241, 13);
     border-radius: 2px;
@@ -761,9 +770,6 @@ footer {
   .enviar input{
     border-radius: 3px;
     font-size: 1.2rem;
-  }
-  .termin{
-    display: none;
   }
 }
 /*FINAL INICIO*/
@@ -1121,7 +1127,75 @@ footer {
     }
 }
 /*comienzo main pregunta*/
-
+#primeraPreg{
+  background-image: linear-gradient(to top, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856));
+}
+/* Estilo para el acordeón */
+.accordion-item {
+  background-color: rgb(226, 230, 15);
+  color: rgb(11, 1, 1);
+}
+.accordion-button {
+  background-color: rgb(11, 1, 1);
+  color: rgb(226, 230, 15);
+}
+.accordion-button:not(.collapsed) {
+  background-color: rgb(11, 1, 1);
+  color: rgb(226, 230, 15);
+}
+.accordion-button:hover {
+  background-color: rgb(226, 230, 15); 
+  color: rgb(11, 1, 1);
+}
+.accordion-body {
+  background-color: rgb(226, 230, 15);
+  color: rgb(11, 1, 1);
+}
+/*FIN PÁGINA PREGUNTA*/
+/*COMIENZO PÁGINA CONTACTO*/
+.tituloContacto {
+  height: 50vh;
+  background-image: url(https://e1.pxfuel.com/desktop-wallpaper/531/524/desktop-wallpaper-chocolate-bar.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.subTituloContacto{
+  height: 50vh;
+  background-color: rgba(11, 1, 1, 0.8);
+}
+.subTituloContacto h1 {
+  font-size: 4.3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.subTituloContacto h3{
+  font-size: 2.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*media del titulo contacto*/
+@media (max-width: 768px){
+  .tituloContacto{
+    height: 40vh;
+  }
+  .subTituloContacto{
+    height: 40vh;
+  }
+  .subTituloContacto h1{
+    font-size: 3rem;
+  }
+  .subTituloContacto h3{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px){
+  .subTituloContacto h1{
+    font-size: 2rem;
+  }
+  .subTituloContacto h3{
+    font-size: 1rem;
+  }
+}
+/*comienzo main contacto*/
 
 
 
