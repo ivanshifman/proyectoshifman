@@ -50,78 +50,93 @@
                     con nosotros.</h3>
             </div>
         </div>
-        <section id="ContactoSeccion">
-            <form class="form" method="post">
-                <fieldset>
-                    <h2>Contactanos</h2>
-                    <div class="contenedorContacto">
-                        <div class="nombreContacto">
-                            <input type="text" placeholder="Nombre" id="nombreContacto" required>
-                            <label for="nombreContacto">Nombre:</label>
-                            <span class="form_line"></span>
-                        </div>
-                        <div class="apellidoContacto">
-                            <input type="text" placeholder="Apellido" id="apellidoContacto" required>
-                            <label for="apellidoContacto">Apellido:</label>
-                            <span class="form_line"></span>
-                        </div>
-                        <div class="telefonoContacto">
-                            <input type="text" placeholder="Teléfono" id="telefonoContacto" required>
-                            <label for="telefonoContacto">Teléfono:</label>
-                            <span class="form_line"></span>
-                        </div>
-                        <div class="mailContacto">
-                            <input type="email" placeholder="Correo electrónico" id="mailContacto" required>
-                            <label for="mailContacto">E-mail:</label>
-                            <span class="form_line"></span>
-                        </div>
-                        <div class="asuntoContacto">
-                            <input type="text" placeholder="Asunto" id="asuntoContacto" required>
-                            <label for="asuntoContacto">Asunto:</label>
-                            <span class="form_line"></span>
-                        </div>
-                        <div class="mensajeContacto">
-                            <label for="mensajeContacto">Mensaje:</label>
-                            <textarea id="mensajeContacto" name="mensaje" placeholder="Mensaje" rows="10" cols="30"
-                                required></textarea>
-                        </div>
 
-
-                        <div class="terminoContacto">
-                            <input type="checkbox" id="terminosContacto" name="terminos" required>
-                            <label for="terminosContacto">Acepto los términos y condiciones</label>
-                        </div>
-
-                        <a href="../index.html"><input type="submit" value="Enviar"></a>
-
-
+        <section id="contactoComienzo">
+            <div class="container-fluid pt-5 pb-5 d-flex col-10 justify-content-center align-content-center">
+                <form class="row g-3 mt-5 border border-5 border-warning px-3 py-3 bg-black rounded-4">
+                    <div class="col-12">
+                        <h4 class="text-decoration-underline fs-1 fw-bold text-warning">Contáctanos</h4>
                     </div>
-                </fieldset>
-            </form>
-        </section>
-        <section id="SeccionContactoFin">
-            <div class="mapa">
-                <div class="mapi">
-                    <h3>¿DONDÉ ESTAMOS?</h3>
-                    <span class="material-icons">explore</span>
-                </div>
-                <div class="supermapa">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7431068501164!2d-58.41533690000001!3d-34.585366199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57fa5252375%3A0xcfb0a152ff3580e6!2sAv.%20Sta.%20Fe%203653%2C%20C1425%20CABA!5e0!3m2!1ses-419!2sar!4v1688071158228!5m2!1ses-419!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <p>Nos ubicamos en Av. Sante Fe al 3653, barrio de Palermo, CABA.</p>
-                </div>
-                <div class="bombon">
-                    <img src="./img/bombon.png" alt="bombon">
-                </div>
-                <div class="unob">
-                    <a href="./pages/productos.html">
-                        <input type="button" value="Ir al catálogo">
-                    </a>
-                </div>
+                    <div class="col-md-6">
+                        <label for="inputName" class="form-label fs-3 fw-bold text-warning">Nombre:</label>
+                        <input type="text" class="form-control fs-4 bg-dark text-warning border border-2 border-warning"
+                            id="inputName" placeholder="Nombre">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputSurname" class="form-label fs-3 fw-bold text-warning">Apellido:</label>
+                        <input type="text" class="form-control fs-4 bg-dark text-warning border border-2 border-warning"
+                            id="inputSurname" placeholder="Apellido">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label fs-3 fw-bold text-warning">Email:</label>
+                        <input type="email"
+                            class="form-control fs-4 bg-dark text-warning border border-2 border-warning"
+                            id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label fs-3 fw-bold text-warning">Contraseña:</label>
+                        <input type="password"
+                            class="form-control fs-4 bg-dark text-warning border border-2 border-warning"
+                            id="inputPassword4" placeholder="Contraseña">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputCountry" class="form-label fs-3 fw-bold text-warning">País:</label>
+                        <select id="inputCountry"
+                            class="form-select fs-4 bg-dark text-warning border border-2 border-warning">
+                            <option selected>Seleccionar país</option>
+                            <option>Argentina</option>
+                            <option>Chile</option>
+                            <option>Uruguay</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputCity" class="form-label fs-3 fw-bold text-warning">Ciudad:</label>
+                        <input type="text" class="form-control fs-4 bg-dark text-warning border border-2 border-warning"
+                            id="inputCity" placeholder="Ciudad">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPhone" class="form-label fs-3 fw-bold text-warning">Teléfono:</label>
+                        <input type="number"
+                            class="form-control fs-4 bg-dark text-warning border border-2 border-warning"
+                            id="inputPhone" placeholder="Teléfono">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputAsunto" class="form-label fs-3 fw-bold text-warning">Asunto:</label>
+                        <select id="inputAsunto"
+                            class="form-select fs-4 bg-dark text-warning border border-2 border-warning">
+                            <option selected>Seleccionar asunto</option>
+                            <option>Compras realizadas</option>
+                            <option>Envíos</option>
+                            <option>Precios</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputDay" class="form-label fs-3 fw-bold text-warning">Día:</label>
+                        <input type="datetime-local"
+                            class="form-control fs-4 bg-dark text-warning border border-2 border-warning" id="inputDay">
+                    </div>
+                    <div class="col-12">
+                        <label for="Message" class="form-label fs-3 fw-bold text-warning">Mensaje:</label>
+                        <textarea id="Mesagge"
+                            class="form-control fs-4 bg-dark text-warning border border-2 border-warning mensaje"
+                            cols="15" rows="10"></textarea>
+                    </div>
+                    <div class="col-12 mx-4">
+                        <div class="form-check">
+                            <input class="form-check-input fs-3" type="checkbox" id="gridCheck">
+                            <label class="form-check-label fs-3 text-warning fw-bold" for="gridCheck">
+                                Acepto términos y condiciones
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit"
+                            class="btn btn-warning border border-3 border-black text-black fs-3 fw-bold">Enviar</button>
+                    </div>
+                </form>
             </div>
         </section>
+
         <div class="superb">
             <input type="checkbox" id="btn-mas">
             <div class="redes">
@@ -141,7 +156,7 @@
             </div>
         </div>
         <div class="volverProd d-flex align-items-center justify-content-center pt-5 pb-4">
-            <a href="../index.html"><input type="button" value="Volver a Inicio" class="rounded-4"></a>
+            <a href="../index.html"><input type="button" value="Volver a Inicio" class="rounded-4 fs-2"></a>
         </div>
 
     </main>
@@ -159,10 +174,7 @@
             <div class="enviar">
                 <a href="../index.html"><input type="submit" value="Enviar"></a>
             </div>
-
         </div>
-
-
         <div class="derecho">
             <small>
                 <p>&copy;
@@ -172,14 +184,11 @@
             </small>
         </div>
         <div class="termin">
-
             <ul>
                 <li><a href="../index.html">Ayuda y servicios</a></li>
                 <li><a href="../index.html">Términos y condiciones</a></li>
             </ul>
-
         </div>
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
