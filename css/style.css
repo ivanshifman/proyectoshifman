@@ -93,7 +93,7 @@ html{
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   header{
     height: 30vh;
   }
@@ -762,7 +762,7 @@ footer {
     height: 50vh;
   }
 }
-@media (max-width: 768px){
+@media (max-width: 992px){
   .derecho small p{
     font-size: 1.1rem;
   }
