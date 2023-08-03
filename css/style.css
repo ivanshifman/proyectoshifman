@@ -673,7 +673,7 @@ html{
 }
 /*COMIENZO FOOTER*/
 footer {
-  height: 45vh;
+  height: 60vh;
   background-color: rgb(11, 1, 1);
   display: flex;
   justify-content: space-evenly;
@@ -759,7 +759,7 @@ footer {
 /*media del footer*/
 @media(max-width: 1024px){
   footer{
-    height: 50vh;
+    height: 55vh;
   }
 }
 @media (max-width: 992px){
