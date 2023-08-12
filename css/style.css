@@ -20,7 +20,6 @@ header{
 .nav-item a {
   color: rgb(200, 241, 13);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-decoration: none;
 }
 .lista li:hover {
   background-color: rgb(200, 241, 13);
@@ -493,7 +492,7 @@ header{
   text-align: center;
   border-radius: 50%;
   box-shadow: 8px 1px 10px rgba(0,0,0,0.4);
-
+  transition: all 500ms ease;
 }
 
 .redes a:hover{
@@ -545,7 +544,7 @@ header{
     font-size: 20px;
   }
 }
-@media(max-width: 480px){
+@media(max-width: 576px){
   .redes a, .btn-mas span{
     width: 36px;
     height: 36px;
@@ -578,7 +577,7 @@ footer {
   display: flex;
   align-items: flex-end;
 }
-.derecho small p{
+.derecho p{
   font-size: 1.3rem;
   color: rgb(200, 241, 13);
 }
@@ -604,7 +603,7 @@ footer {
   color: rgb(200, 241, 13);
   text-decoration: underline;
 }
-.newle p small{
+.newle p{
   font-size: 1.7rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(200, 241, 13);
@@ -658,7 +657,7 @@ footer {
   }
 }
 @media (max-width: 992px){
-  .derecho small p{
+  .derecho p{
     font-size: 1.1rem;
   }
   .termin{
@@ -670,7 +669,7 @@ footer {
   .newle h4{
     font-size: 1.7rem;
   }
-  .newle p small{
+  .newle p {
     font-size: 1.3rem;
   }
   .textFo span{
@@ -705,13 +704,13 @@ footer {
   }
 }
 @media (max-width:480px){
-  .derecho small p{
+  .derecho p{
     font-size: 0.8rem;
   }
   .newle h4{
     font-size: 1.4rem;
   }
-  .newle p small{
+  .newle p{
     font-size: 1.1rem;
   }
   .textFo span{
