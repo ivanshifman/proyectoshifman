@@ -1,0 +1,21 @@
+header{
+    background-color: map-get($colores, negro);
+    .textoInicio{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .lista{
+        ul{
+            li{
+                &:hover{
+                    background-color: map-get($colores, amarillouno);
+                    a {color: map-get($colores, negro);}
+                }
+                a{
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    color: map-get($colores, amarillouno);
+                }
+            }
+        }
+    }
+}
+// subheader inicio
