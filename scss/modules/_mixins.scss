@@ -1,16 +1,13 @@
-@mixin flex($justify, $align, $direction) {
+@mixin flexbox($direction, $align, $justify) {
     display: flex;
-    justify-content: $justify;
-    align-items: $align;
     flex-direction: $direction;
-}
+    align-items: $align;
+    justify-content: $justify;
+  }
+  
 @mixin aya($alto, $ancho) {
     height: $alto;
     width: $ancho;
-}
-@mixin letra($fuente, $tamano) {
-    font-family: $fuente;
-    font-size: $tamano;
 }
 @mixin responsive($breakpoint) {
     @media (max-width: $breakpoint){

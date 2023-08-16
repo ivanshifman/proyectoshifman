@@ -27,4 +27,391 @@ header .lista ul li a {
   color: rgb(200, 241, 13);
 }
 
+.tituloContacto, .tituloPreg, .tituloHistoria, .productoProd, .principal {
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#primero .tercero .contetres .terceri, #primero .segundo .contedos .segundi, #primero .primer .conteuno .primeri {
+  position: relative;
+  width: 35vw;
+  height: 50vh;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(11, 1, 1, 0.5);
+  cursor: pointer;
+}
+
+.redes a, .btn-mas span {
+  display: block;
+  background-color: rgb(11, 1, 1);
+  color: rgb(200, 241, 13);
+  width: 58px;
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 8px 1px 10px rgba(0, 0, 0, 0.4);
+  transition: all 500ms ease;
+}
+
+.principal {
+  overflow: hidden;
+  background-image: url(https://www.mantelacuadros.com/wp-content/uploads/2019/10/portada-chocolate-claudio-corallo-mejor-chocolate-mundo.jpg);
+}
+.principal .subprin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 50vh;
+  background-color: rgba(11, 1, 1, 0.8);
+  z-index: 2;
+}
+.principal .subprin .titulo {
+  color: #fff;
+  font-style: italic;
+  text-decoration: underline;
+  z-index: 3;
+  text-align: center;
+  font-size: 4.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.principal .subprin h2 {
+  font-size: 2.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  z-index: 3;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .principal .subprin .titulo {
+    font-size: 3.2rem;
+  }
+  .principal .subprin h2 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 480px) {
+  .principal .subprin .titulo {
+    font-size: 2.2rem;
+  }
+  .principal .subprin h2 {
+    font-size: 0.9rem;
+  }
+}
+.productoProd {
+  background-image: url(https://img2.rtve.es/imagenes/10-cosas-sabias-sobre-chocolate/1674817846688.jpg);
+}
+.productoProd .subProductoProd {
+  height: 50vh;
+  background-color: rgba(11, 1, 1, 0.8);
+}
+.productoProd .subProductoProd h1 {
+  font-size: 4.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.productoProd .subProductoProd h2 {
+  font-size: 2.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .productoProd {
+    height: 40vh;
+  }
+  .productoProd .subProductoProd {
+    height: 40vh;
+  }
+  .productoProd .subProductoProd h1 {
+    font-size: 3rem;
+  }
+  .productoProd .subProductoProd h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .productoProd .subProductoProd h1 {
+    font-size: 2rem;
+  }
+  .productoProd .subProductoProd h2 {
+    font-size: 1rem;
+  }
+}
+.tituloHistoria {
+  background-image: url(https://px.fotos.cdn.0223.com.ar/f/082022/1659463256170.webp?cw=1070&ch=602&extw=jpeg);
+}
+.tituloHistoria .subTituloHisto {
+  height: 50vh;
+  background-color: rgba(11, 1, 1, 0.8);
+}
+.tituloHistoria .subTituloHisto h1 {
+  font-size: 4.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.tituloHistoria .subTituloHisto h2 {
+  font-size: 2.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .tituloHistoria {
+    height: 40vh;
+  }
+  .tituloHistoria .subTituloHisto {
+    height: 40vh;
+  }
+  .tituloHistoria .subTituloHisto h1 {
+    font-size: 3rem;
+  }
+  .tituloHistoria .subTituloHisto h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .tituloHistoria .subTituloHisto h1 {
+    font-size: 2rem;
+  }
+  .tituloHistoria .subTituloHisto h2 {
+    font-size: 1rem;
+  }
+}
+.tituloPreg {
+  background-image: url(https://www.delicias.tv/blog/wp-content/uploads/2016/11/Chocolate-Portada.jpg);
+}
+.tituloPreg .subTituloPreg {
+  height: 50vh;
+  background-color: rgba(11, 1, 1, 0.8);
+}
+.tituloPreg .subTituloPreg h1 {
+  font-size: 4.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.tituloPreg .subTituloPreg h2 {
+  font-size: 2.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .tituloPreg {
+    height: 40vh;
+  }
+  .tituloPreg .subTituloPreg {
+    height: 40vh;
+  }
+  .tituloPreg .subTituloPreg h1 {
+    font-size: 3rem;
+  }
+  .tituloPreg .subTituloPreg h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .tituloPreg .subTituloPreg h1 {
+    font-size: 2rem;
+  }
+  .tituloPreg .subTituloPreg h2 {
+    font-size: 1rem;
+  }
+}
+.tituloContacto {
+  background-image: url(https://e1.pxfuel.com/desktop-wallpaper/531/524/desktop-wallpaper-chocolate-bar.jpg);
+}
+.tituloContacto .subTituloContacto {
+  height: 50vh;
+  background-color: rgba(11, 1, 1, 0.8);
+}
+.tituloContacto .subTituloContacto h1 {
+  font-size: 4.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.tituloContacto .subTituloContacto h2 {
+  font-size: 2.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .tituloContacto {
+    height: 40vh;
+  }
+  .tituloContacto .subTituloContacto {
+    height: 40vh;
+  }
+  .tituloContacto .subTituloContacto h1 {
+    font-size: 3rem;
+  }
+  .tituloContacto .subTituloContacto h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .tituloContacto .subTituloContacto h1 {
+    font-size: 2rem;
+  }
+  .tituloContacto .subTituloContacto h2 {
+    font-size: 1rem;
+  }
+}
+#primero {
+  background-color: linear-gradient(to bottom, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856));
+  height: 240vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 50vh 50vh 50vh;
+  grid-template-areas: "triple" "primer" "segundo" "tercero";
+  row-gap: 20vh;
+}
+#primero .triplecont {
+  background-color: rgb(11, 1, 1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0 5px 0;
+  grid-area: triple;
+}
+#primero .triplecont h3 {
+  font-size: 2.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(241, 180, 13);
+  text-align: center;
+}
+#primero .primer {
+  grid-area: primer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#primero .primer .conteuno {
+  height: 50vh;
+  width: 35vw;
+  margin-left: 7vw;
+}
+#primero .segundo {
+  grid-area: segundo;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#primero .segundo .contedos {
+  height: 50vh;
+  width: 35vw;
+  margin-left: 7vw;
+}
+#primero .tercero {
+  grid-area: tercero;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#primero .tercero .contetres {
+  height: 50vh;
+  width: 35vw;
+  margin-left: 7vw;
+}
+#btn-mas {
+  display: none;
+}
+
+.superb {
+  position: fixed;
+  bottom: 23px;
+  right: 23px;
+}
+.superb .redes a {
+  margin-bottom: -15px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 25px;
+  z-index: 9000;
+}
+
+.redes a:hover, .btn-mas span:hover {
+  background-color: rgb(200, 241, 13);
+  color: rgb(11, 1, 1);
+}
+
+#btn-mas:checked ~ .redes a {
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 3000;
+}
+
+.btn-mas span {
+  cursor: pointer;
+  background-color: rgb(11, 1, 1);
+  color: rgb(200, 241, 13);
+  font-size: 26px;
+}
+#btn-mas:checked ~ .btn-mas span {
+  transform: rotate(137deg);
+  font-size: 28px;
+}
+
+@media (max-width: 768px) {
+  .superb .redes a, .superb .btn-mas span {
+    line-height: 40px;
+    box-shadow: 6px 1px 8px rgba(0, 0, 0, 0.4);
+    height: 40px;
+    width: 40px;
+  }
+  .superb .redes a {
+    margin-bottom: -10px;
+    font-size: 20px;
+  }
+  .superb .btn-mas span {
+    font-size: 20px;
+  }
+  #btn-mas:checked ~ .redes a {
+    margin-bottom: 8px;
+  }
+  #btn-mas:checked ~ .btn-mas span {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .superb .redes a, .superb .btn-mas span {
+    line-height: 36px;
+    box-shadow: 4px 1px 6px rgba(0, 0, 0, 0.4);
+    height: 36px;
+    width: 36px;
+  }
+  .superb .redes a {
+    margin-bottom: -7px;
+    font-size: 19px;
+  }
+  .superb .btn-mas span {
+    font-size: 19px;
+  }
+  .superb #btn-mas:checked ~ .redes a {
+    margin-bottom: 6px;
+  }
+  .superb #btn-mas:checked ~ .btn-mas span {
+    font-size: 19px;
+  }
+}
+.volverProd {
+  background-color: rgb(129, 96, 6);
+}
+.volverProd input {
+  background-color: rgb(11, 1, 1);
+  color: rgb(226, 230, 15);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 60vw;
+  border: 2px solid rgb(226, 230, 15);
+}
+.volverProd input:hover {
+  background-color: rgb(226, 230, 15);
+  color: rgb(11, 1, 1);
+  border: 2px solid rgb(11, 1, 1);
+}
+
 /*# sourceMappingURL=style.css.map */

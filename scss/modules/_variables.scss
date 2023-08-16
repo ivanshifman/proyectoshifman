@@ -5,103 +5,10 @@ $colores: (
     amarillodos: rgb(226,230,15),
     amarillotres: rgb(233,236,16),
     amarillocuatro: rgb(201,243,12),
+    amarillocinco: rgb(241, 180, 13),
     fondouno: linear-gradient(to bottom, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856)),
     fondodos: linear-gradient(to top, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856)),
     fondoboton: rgb(129,96,6),
+    blanco: #fff,
 );
 
-// placeholders
-%titulo {
-    height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-%figuri {
-    position: relative;
-    width: 35vw;
-    height: 50vh;
-    overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(11, 1, 1, 0.5);
-    cursor: pointer;
-}
-%imagi {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-}
-%capasIndex {
-    color: #e7bebe;
-    visibility: hidden;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background: rgba(11, 1, 1, 0.5);
-    opacity: 0;
-}
-%parIndH {
-    font-size: 2.8rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgba(214, 167, 12, 0.856);
-    background-color: rgb(11, 1, 1);
-    text-align: center;
-    text-decoration: underline;
-    border-radius: 6px;
-    padding: 5px 10px;
-}
-%parIndP {
-    font-size: 2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(11, 1, 1);
-    background-color: rgb(200, 241, 13);
-    border-radius: 6px;
-    padding: 5px;
-    text-align: center;
-    width: 80%;
-    border: 1px solid rgb(11, 1, 1);
-}
-%indexPH {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    background-attachment: fixed;
-}
-%indexInput {
-    background-color: rgb(11, 1, 1);
-    border-radius: 5px;
-    border: 2px solid rgb(226, 230, 15);
-    height: 70px;
-    width: 300px;
-    color: rgb(226, 230, 15);
-    font-size: 2.2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-}
-%botonRedes {
-    display: block;
-    background-color: rgb(11, 1, 1);
-    color: rgb(200, 241, 13);
-    width: 58px;
-    height: 58px;
-    line-height: 58px;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 8px 1px 10px rgba(0,0,0,0.4);
-    transition: all 500ms ease;
-}
-%placeFooter {
-    color: rgb(200, 241, 13);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(11, 1, 1);
-    border: 3px solid rgb(200, 241, 13);
-    border-radius: 4px;
-    font-size: 1.8rem;
-}

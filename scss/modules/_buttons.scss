@@ -1,0 +1,116 @@
+// botonFlotante
+
+
+// Estilos CSS organizados en SCSS
+#btn-mas {
+  display: none;
+}
+
+.superb {
+  position: fixed;
+  bottom: 23px;
+  right: 23px;
+    .redes a {
+        margin-bottom: -15px;
+        opacity: 0;
+        visibility: hidden;
+        font-size: 25px;
+        z-index: 9000;
+    }
+}
+.redes a, .btn-mas span {
+  @extend %botonRedes;
+  &:hover {
+    background-color: map-get($colores, amarillouno) ;
+    color: map-get($colores, negro);
+  }
+}
+#btn-mas:checked ~ .redes a {
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 3000;
+}
+.btn-mas span {
+  cursor: pointer;
+  background-color: map-get($colores, negro);
+  color: map-get($colores, amarillouno);
+  font-size: 26px;
+
+  #btn-mas:checked ~ & {
+    transform: rotate(137deg);
+    font-size: 28px;
+  }
+}
+@include responsive(768px) {
+      .superb {
+        .redes a, .btn-mas span {
+            line-height: 40px;
+            box-shadow: 6px 1px 8px rgba(0,0,0,0.4);
+            @include aya (40px, 40px);
+          }
+      }
+      .superb {
+        .redes {
+            a {
+                margin-bottom: -10px;
+                font-size: 20px;
+            }
+        }
+        .btn-mas {
+            span {
+                font-size: 20px;
+            }
+        }
+      }
+      #btn-mas:checked~ .redes a{
+        margin-bottom: 8px;
+      }
+      #btn-mas:checked~ .btn-mas span{
+        font-size: 20px;
+      } 
+}
+@include responsive(576px) {
+    .superb {
+        .redes a, .btn-mas span {
+            line-height: 36px;
+            box-shadow: 4px 1px 6px rgba(0,0,0,0.4);
+            @include aya (36px, 36px);
+        }
+    }
+    .superb {
+        .redes {
+            a {
+                margin-bottom: -7px;
+                font-size: 19px;
+            }
+        }
+        .btn-mas {
+            span {
+                font-size: 19px;
+            }
+        }
+        #btn-mas:checked~ .redes a{
+            margin-bottom: 6px;
+          }
+          #btn-mas:checked~ .btn-mas span{
+            font-size: 19px;
+          }
+    }
+}
+//botonVolverInicio
+.volverProd {
+    background-color: map-get($colores, fondoboton);
+    input {
+        background-color: rgb(11, 1, 1);
+        color: map-get($colores, amarillodos);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 60vw;
+        border: 2px solid map-get($colores, amarillodos);
+        &:hover {
+            background-color: map-get($colores, amarillodos);
+            color: map-get($colores, negro);
+            border: 2px solid map-get($colores, negro);
+        }
+    }
+}

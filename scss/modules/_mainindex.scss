@@ -1,0 +1,62 @@
+#primero {
+    background-color: map-get($colores, fondouno);
+    height: 240vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 50vh 50vh 50vh;
+    grid-template-areas: 
+    "triple"
+    "primer"
+    "segundo"
+    "tercero"
+    ;
+    row-gap: 20vh;
+    .triplecont {
+        background-color: map-get($colores, negro);
+        @include flexbox(row, center, center);
+        padding: 5px 0 5px 0;
+        grid-area: triple;
+        h3 {
+            font-size: 2.8rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: map-get($colores, amarillocinco);
+            text-align: center;
+        }
+    }
+    .primer {
+        grid-area: primer;
+        @include flexbox(row, center, space-evenly);
+        .conteuno {
+            @include aya (50vh, 35vw);
+            margin-left: 7vw;
+            .primeri {
+                @extend %figuri;
+                
+            }
+        }
+    }
+    .segundo {
+        grid-area: segundo;
+        @include flexbox(row, center, space-evenly);
+        .contedos {
+            @include aya (50vh, 35vw);
+            margin-left: 7vw;
+            .segundi {
+                @extend %figuri;
+
+            }
+        }
+    }
+    .tercero {
+        grid-area: tercero;
+        @include flexbox(row, center, space-evenly);
+        .contetres {
+            @include aya (50vh, 35vw);
+            margin-left: 7vw;
+            .terceri {
+                @extend %figuri;
+
+            }
+        }
+    }
+}

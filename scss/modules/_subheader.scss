@@ -1,0 +1,222 @@
+//subheaderinicio
+.principal {
+    @extend %titulo;
+    overflow: hidden;
+    background-image: url(https://www.mantelacuadros.com/wp-content/uploads/2019/10/portada-chocolate-claudio-corallo-mejor-chocolate-mundo.jpg);
+    .subprin {
+        @include flexbox(column, center, center);
+        overflow: hidden;
+        height: 50vh;
+        background-color: map-get($colores, negrofiltro);
+        z-index: 2;
+        .titulo {
+            color: map-get($colores, blanco);
+            font-style: italic;
+            text-decoration: underline;
+            z-index: 3;
+            text-align: center;
+            font-size: 4.3rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2 {
+            font-size: 2.2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: map-get($colores, blanco);
+            z-index: 3;
+            text-align: center;
+        }
+    }
+}
+@include responsive(768px){
+    .principal {
+        .subprin {
+            .titulo {
+                font-size: 3.2rem;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+@include responsive(480px){
+    .principal {
+        .subprin {
+            .titulo {
+                font-size: 2.2rem;
+            }
+            h2 {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+//subheaderRestantes
+.productoProd {
+    @extend %titulo;
+    background-image: url(https://img2.rtve.es/imagenes/10-cosas-sabias-sobre-chocolate/1674817846688.jpg);
+    .subProductoProd {
+        height: 50vh;
+        background-color: map-get($colores, negrofiltro);
+        h1 {
+            font-size: 4.3rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2 {
+            font-size: 2.2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+}
+@include responsive(768px) {
+    .productoProd {
+        height: 40vh;
+        .subProductoProd {
+            height: 40vh;
+            h1 {
+                font-size: 3rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+          }
+      }
+}
+@include responsive(480px) {
+    .productoProd {
+        .subProductoProd {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.tituloHistoria {
+    @extend %titulo;
+    background-image: url(https://px.fotos.cdn.0223.com.ar/f/082022/1659463256170.webp?cw=1070&ch=602&extw=jpeg);
+    .subTituloHisto {
+        height: 50vh;
+        background-color: map-get($colores, negrofiltro);
+        h1 {
+            font-size: 4.3rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2 {
+            font-size: 2.2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+}
+@include responsive(768px) {
+    .tituloHistoria {
+        height: 40vh;
+        .subTituloHisto {
+            height: 40vh;
+            h1 {
+                font-size: 3rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+          }
+      }
+}
+@include responsive(480px) {
+    .tituloHistoria {
+        .subTituloHisto {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.tituloPreg {
+    @extend %titulo;
+    background-image: url(https://www.delicias.tv/blog/wp-content/uploads/2016/11/Chocolate-Portada.jpg);
+    .subTituloPreg {
+        height: 50vh;
+        background-color: map-get($colores, negrofiltro);
+        h1 {
+            font-size: 4.3rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2 {
+            font-size: 2.2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+}
+@include responsive(768px) {
+    .tituloPreg {
+        height: 40vh;
+        .subTituloPreg {
+            height: 40vh;
+            h1 {
+                font-size: 3rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+          }
+      }
+}
+@include responsive(480px) {
+    .tituloPreg {
+        .subTituloPreg {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.tituloContacto {
+    @extend %titulo;
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/531/524/desktop-wallpaper-chocolate-bar.jpg);
+    .subTituloContacto {
+        height: 50vh;
+        background-color: map-get($colores, negrofiltro);
+        h1 {
+            font-size: 4.3rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2 {
+            font-size: 2.2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+}
+@include responsive(768px) {
+    .tituloContacto {
+        height: 40vh;
+        .subTituloContacto {
+            height: 40vh;
+            h1 {
+                font-size: 3rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+          }
+      }
+}
+@include responsive(480px) {
+    .tituloContacto {
+        .subTituloContacto {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    }
+}
