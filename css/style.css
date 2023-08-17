@@ -44,6 +44,88 @@ header .lista ul li a {
   cursor: pointer;
 }
 
+#primero .tercero .contetres .terceri img, #primero .segundo .contedos .segundi img, #primero .primer .conteuno .primeri img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: all 500ms ease-out;
+}
+
+#primero .tercero .contetres .terceri .capatres, #primero .segundo .contedos .segundi .capados, #primero .primer .conteuno .primeri .capauno {
+  color: #e7bebe;
+  visibility: hidden;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 1, 1, 0.5);
+  opacity: 0;
+  transition: all 500ms ease-out;
+}
+
+#primero .tercero .partres h4, #primero .segundo .pardos h4, #primero .primer .paruno h4 {
+  font-size: 2.8rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgba(214, 167, 12, 0.856);
+  background-color: rgb(11, 1, 1);
+  text-align: center;
+  text-decoration: underline;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+#primero .tercero .partres p, #primero .segundo .pardos p, #primero .primer .paruno p {
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(11, 1, 1);
+  background-color: rgb(200, 241, 13);
+  border-radius: 6px;
+  padding: 5px;
+  text-align: center;
+  width: 80%;
+  border: 1px solid rgb(11, 1, 1);
+}
+
+.finalIndex .IndexHistoria, .finalIndex .IndexProducto {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.finalIndex .IndexHistoria h5, .finalIndex .IndexProducto h5 {
+  font-size: 3.2rem;
+  color: rgb(233, 236, 16);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.finalIndex .IndexHistoria p, .finalIndex .IndexProducto p {
+  font-size: 2.2rem;
+  color: rgb(201, 243, 12);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+
+.finalIndex .IndexHistoria input, .finalIndex .IndexProducto input {
+  background-color: rgb(11, 1, 1);
+  border-radius: 8px;
+  border: 4px solid rgb(226, 230, 15);
+  height: 70px;
+  width: 300px;
+  color: rgb(226, 230, 15);
+  font-size: 2.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .redes a, .btn-mas span {
   display: block;
   background-color: rgb(11, 1, 1);
@@ -257,7 +339,7 @@ header .lista ul li a {
   }
 }
 #primero {
-  background-color: linear-gradient(to bottom, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856));
+  background-image: linear-gradient(to bottom, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856));
   height: 240vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -292,6 +374,29 @@ header .lista ul li a {
   width: 35vw;
   margin-left: 7vw;
 }
+#primero .primer .conteuno .primeri:hover > .capauno {
+  visibility: visible;
+  opacity: 1;
+}
+#primero .primer .conteuno .primeri:hover > img {
+  transform: scale(1.3);
+}
+#primero .primer .conteuno .primeri .capauno h4 {
+  text-decoration: underline;
+  font-size: 2.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#primero .primer .conteuno .primeri .capauno p {
+  font-size: 1.7rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#primero .primer .paruno {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
 #primero .segundo {
   grid-area: segundo;
   display: flex;
@@ -303,6 +408,29 @@ header .lista ul li a {
   height: 50vh;
   width: 35vw;
   margin-left: 7vw;
+}
+#primero .segundo .contedos .segundi:hover > .capados {
+  visibility: visible;
+  opacity: 1;
+}
+#primero .segundo .contedos .segundi:hover > img {
+  transform: scale(1.3);
+}
+#primero .segundo .contedos .segundi .capados h4 {
+  text-decoration: underline;
+  font-size: 2.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#primero .segundo .contedos .segundi .capados p {
+  font-size: 1.7rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#primero .segundo .pardos {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 #primero .tercero {
   grid-area: tercero;
@@ -316,6 +444,321 @@ header .lista ul li a {
   width: 35vw;
   margin-left: 7vw;
 }
+#primero .tercero .contetres .terceri:hover > .capatres {
+  visibility: visible;
+  opacity: 1;
+}
+#primero .tercero .contetres .terceri:hover > img {
+  transform: scale(1.3);
+}
+#primero .tercero .contetres .terceri .capatres h4 {
+  text-decoration: underline;
+  font-size: 2.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#primero .tercero .contetres .terceri .capatres p {
+  font-size: 1.7rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#primero .tercero .partres {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  #primero {
+    grid-template-rows: 10vh 90vh 90vh 90vh;
+    height: 360vh;
+    row-gap: 20vh;
+  }
+  #primero .triplecont {
+    padding: 3px 0 3px 0;
+  }
+  #primero .triplecont h3 {
+    font-size: 1.5rem;
+  }
+  #primero .primer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #primero .primer .conteuno {
+    width: 80vw;
+    margin-right: 7vw;
+  }
+  #primero .primer .conteuno .primeri {
+    width: 100%;
+  }
+  #primero .primer .conteuno .primeri .capauno h4 {
+    font-size: 2.5rem;
+  }
+  #primero .primer .conteuno .primeri .capauno p {
+    font-size: 1.9rem;
+  }
+  #primero .primer .paruno h4 {
+    font-size: 2.5rem;
+  }
+  #primero .primer .paruno p {
+    font-size: 1.9rem;
+    padding: 3px;
+  }
+  #primero .segundo {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #primero .segundo .contedos {
+    width: 80vw;
+    margin-right: 7vw;
+  }
+  #primero .segundo .contedos .segundi {
+    width: 100%;
+  }
+  #primero .segundo .contedos .segundi .capados h4 {
+    font-size: 2.5rem;
+  }
+  #primero .segundo .contedos .segundi .capados p {
+    font-size: 1.9rem;
+  }
+  #primero .segundo .pardos h4 {
+    font-size: 2.5rem;
+  }
+  #primero .segundo .pardos p {
+    font-size: 1.9rem;
+    padding: 3px;
+  }
+  #primero .tercero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #primero .tercero .contetres {
+    width: 80vw;
+    margin-right: 7vw;
+  }
+  #primero .tercero .contetres .terceri {
+    width: 100%;
+  }
+  #primero .tercero .contetres .terceri .capatres h4 {
+    font-size: 2.5rem;
+  }
+  #primero .tercero .contetres .terceri .capatres p {
+    font-size: 1.9rem;
+  }
+  #primero .tercero .partres h4 {
+    font-size: 2.5rem;
+  }
+  #primero .tercero .partres p {
+    font-size: 1.9rem;
+    padding: 3px;
+  }
+}
+@media (max-width: 480px) {
+  #primero {
+    height: 340vh;
+    row-gap: 10vh;
+  }
+  #primero .triplecont {
+    padding: 0px;
+  }
+  #primero .triplecont h3 {
+    font-size: 1.1rem;
+  }
+  #primero .primer .conteuno {
+    height: 40vh;
+  }
+  #primero .primer .conteuno .primeri {
+    height: 100%;
+  }
+  #primero .primer .conteuno .primeri .capauno h4 {
+    font-size: 1.8rem;
+  }
+  #primero .primer .conteuno .primeri .capauno p {
+    font-size: 1.5rem;
+  }
+  #primero .primer .paruno h4 {
+    font-size: 2.2rem;
+  }
+  #primero .primer .paruno p {
+    font-size: 1.8rem;
+    padding: 3px;
+  }
+  #primero .segundo .contedos {
+    height: 40vh;
+  }
+  #primero .segundo .contedos .segundi {
+    height: 100%;
+  }
+  #primero .segundo .contedos .segundi .capados h4 {
+    font-size: 1.8rem;
+  }
+  #primero .segundo .contedos .segundi .capados p {
+    font-size: 1.5rem;
+  }
+  #primero .segundo .pardos h4 {
+    font-size: 2.2rem;
+  }
+  #primero .segundo .pardos p {
+    font-size: 1.8rem;
+    padding: 3px;
+  }
+  #primero .tercero .contetres {
+    height: 40vh;
+  }
+  #primero .tercero .contetres .terceri {
+    height: 100%;
+  }
+  #primero .tercero .contetres .terceri .capatres h4 {
+    font-size: 1.8rem;
+  }
+  #primero .tercero .contetres .terceri .capatres p {
+    font-size: 1.5rem;
+  }
+  #primero .tercero .partres h4 {
+    font-size: 2.2rem;
+  }
+  #primero .tercero .partres p {
+    font-size: 1.8rem;
+    padding: 3px;
+  }
+}
+#segundo #testimonios-carrusel .caruseluno {
+  background-image: linear-gradient(to bottom, rgba(232, 248, 7, 0.884), rgba(239, 255, 10, 0.856));
+}
+#segundo #testimonios-carrusel .caruseluno .itemIndex {
+  height: 500px;
+}
+#segundo #testimonios-carrusel .caruseluno .itemIndex .contenedorRes {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#segundo #testimonios-carrusel .caruseluno .itemIndex .contenedorRes img {
+  margin: 10px 10px 20px 10px;
+  height: 150px;
+  width: 240px;
+}
+#segundo #testimonios-carrusel .caruseluno .itemIndex .contenedorRes p {
+  max-width: 70%;
+  font-size: 2.1rem;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(11, 1, 1);
+}
+
+@media (max-width: 768px) {
+  #segundo #testimonios-carrusel .caruseluno .itemIndex .contenedorRes img {
+    height: 120px;
+    width: 190px;
+  }
+  #segundo #testimonios-carrusel .caruseluno .itemIndex .contenedorRes p {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 480px) {
+  #segundo #testimonios-carrusel .caruseluno .itemIndex .contenedorRes img {
+    height: 110px;
+    width: 170px;
+  }
+  #segundo #testimonios-carrusel .caruseluno .itemIndex .contenedorRes p {
+    font-size: 1.5rem;
+  }
+}
+.finalIndex {
+  display: grid;
+  height: 120vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 45vh 30vh 45vh;
+  grid-template-areas: "indexProducto" "seguirIndex" "IndexHistoria";
+}
+.finalIndex .IndexProducto {
+  grid-area: indexProducto;
+  background-image: url(https://img.freepik.com/fotos-premium/chocolates-surtidos-colocan-paleta-artistica-sobre-fondo-madera-calida_436767-117.jpg?w=2000);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.finalIndex .IndexProducto input:hover {
+  background-color: rgb(226, 230, 15);
+  border: 4px solid rgb(11, 1, 1);
+  color: rgb(11, 1, 1);
+}
+.finalIndex .seguirIndex {
+  grid-area: seguirIndex;
+  background-color: rgb(11, 1, 1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.finalIndex .seguirIndex h5 {
+  font-size: 4rem;
+  color: rgb(226, 230, 15);
+  font-weight: 400;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.finalIndex .IndexHistoria {
+  grid-area: IndexHistoria;
+  background-image: url(https://media.ambito.com/p/5206e614d0b455aec270efe4ab2843dd/adjuntos/239/imagenes/039/619/0039619740/1200x675/smart/chocolate.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.finalIndex .IndexHistoria input:hover {
+  background-color: rgb(226, 230, 15);
+  border: 4px solid rgb(11, 1, 1);
+  color: rgb(11, 1, 1);
+}
+@media (max-width: 768px) {
+  .finalIndex .IndexProducto h5, .finalIndex .IndexHistoria h5 {
+    font-size: 2.4rem;
+  }
+  .finalIndex .IndexProducto p, .finalIndex .IndexHistoria p {
+    font-size: 1.7rem;
+  }
+  .finalIndex .IndexProducto input, .finalIndex .IndexHistoria input {
+    border-radius: 6px;
+    border: 3px solid rgb(226, 230, 15);
+    height: 60px;
+    width: 250px;
+    font-size: 1.8rem;
+  }
+  .finalIndex .IndexProducto input:hover, .finalIndex .IndexHistoria input:hover {
+    border: 3px solid rgb(11, 1, 1);
+  }
+  .finalIndex .seguirIndex h5 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .finalIndex .IndexProducto h5, .finalIndex .IndexHistoria h5 {
+    font-size: 1.9rem;
+  }
+  .finalIndex .IndexProducto p, .finalIndex .IndexHistoria p {
+    font-size: 1.2rem;
+  }
+  .finalIndex .IndexProducto input, .finalIndex .IndexHistoria input {
+    border-radius: 3px;
+    border: 3px solid rgb(226, 230, 15);
+    height: 40px;
+    width: 200px;
+    font-size: 1.3rem;
+  }
+  .finalIndex .seguirIndex h5 {
+    font-size: 2.4rem;
+  }
+}
+
 #btn-mas {
   display: none;
 }
