@@ -4,7 +4,11 @@
     align-items: $align;
     justify-content: $justify;
   }
-  
+  @mixin flexboxdos($directiondos, $justifydos) {
+    display: flex;
+    flex-direction: $directiondos;
+    justify-content: $justifydos;
+  }  
 @mixin aya($alto, $ancho) {
     height: $alto;
     width: $ancho;

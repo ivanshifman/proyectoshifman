@@ -1,0 +1,187 @@
+footer {
+    height: 60vh;
+    background-color: map-get($colores, negro);
+    @include flexboxdos(row, space-evenly);
+  
+    @include responsive(1024px) {
+      height: 55vh;
+    }
+  
+    .derecho {
+      text-align: center;
+      display: flex;
+      align-items: flex-end;
+  
+      p {
+        font-size: 1.3rem;
+        color: map-get($colores, amarillodos);
+  
+        @include responsive(992px) {
+          font-size: 1.1rem;
+        }
+  
+        @include responsive(480px) {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  
+    .termin {
+      @include flexboxdos(column, center);
+  
+      @include responsive(992px) {
+        margin-right: 1vw;
+      }
+  
+      @include responsive(576px) {
+        display: none;
+      }
+  
+      a {
+        font-size: 1.8rem;
+        color: map-get($colores, amarillodos);
+        text-decoration: underline;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+        @include responsive(992px) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  
+    .newle {
+      @include flexboxdos(column, space-around);
+  
+      @include responsive(576px) {
+        margin-left: 1vw;
+      }
+  
+      h6 {
+        font-size: 2.1rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: map-get($colores, amarillodos);
+        text-decoration: underline;
+  
+        @include responsive(992px) {
+          font-size: 1.7rem;
+        }
+  
+        @include responsive(480px) {
+          font-size: 1.4rem;
+        }
+      }
+  
+      p {
+        font-size: 1.7rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: map-get($colores, amarillodos);
+  
+        @include responsive(992px) {
+          font-size: 1.3rem;
+        }
+  
+        @include responsive(480px) {
+          font-size: 1.1rem;
+        }
+      }
+  
+      .textFo {
+        display: flex;
+        flex-direction: column;
+  
+        span {
+          color: map-get($colores, amarillodos);
+          font-size: 2.2rem;
+  
+          @include responsive(992px) {
+            font-size: 1.6rem;
+          }
+  
+          @include responsive(480px) {
+            font-size: 1rem;
+          }
+        }
+  
+        input {
+          color: map-get($colores, amarillodos);
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          background-color: map-get($colores, negro);
+          border: 3px solid map-get($colores, amarillodos);
+          border-radius: 4px;
+          font-size: 1.8rem;
+  
+          &::placeholder {
+            color: map-get($colores, amarillodos);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+            @include responsive(992px) {
+              font-size: 1.1rem;
+            }
+  
+            @include responsive(480px) {
+              font-size: 0.9rem;
+            }
+          }
+  
+          @include responsive(992px) {
+            border: 2px solid map-get($colores, amarillodos);
+            border-radius: 3px;
+            font-size: 1.1rem;
+          }
+  
+          @include responsive(480px) {
+            border: 1px solid map-get($colores, amarillodos);
+            border-radius: 2px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+  
+      .enviar {
+        @include aya(40px, 100px);
+  
+        input {
+          color: map-get($colores, negro);
+          background-color: map-get($colores, amarillodos);
+          border: 2px solid map-get($colores, negro);
+          border-radius: 6px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 1.8rem;
+  
+          @include aya(100%, 100%);
+          font-weight: bold;
+  
+          @include responsive(992px) {
+            border-radius: 4px;
+            font-size: 1.1rem;
+          }
+  
+          @include responsive(480px) {
+            border: 1px solid map-get($colores, negro);
+          }
+  
+          &:hover {
+            color: map-get($colores, amarillodos);
+            background-color: rgb(11, 1, 1);
+            border: 2px solid map-get($colores, amarillodos);
+  
+            @include responsive(480px) {
+              border: 1px solid map-get($colores, amarillodos);
+              border-radius: 3px;
+              font-size: 1.2rem;
+            }
+          }
+  
+          @include responsive(992px) {
+            @include aya(30px, 70px);
+          }
+  
+          @include responsive(480px) {
+            border-radius: 3px;
+            font-size: 1.2rem;
+            @include aya(23px, 50px);
+          }
+        }
+      }
+    }
+  }

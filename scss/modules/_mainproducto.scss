@@ -1,0 +1,39 @@
+#seccioncardsProd {
+    background-image: map-get($colores, fondouno);
+    padding-bottom: 15vh;
+  
+    .contenedorCartasProduc {
+      margin-top: 10vh;
+  
+      .card {
+        transition: all 500ms ease;
+        box-shadow: 2px 2px 8px map-get($colores, negrofiltro);
+        &:hover {
+          transform: translateY(-2%);
+        }
+  
+        img.imagenCarta {
+          height: 15rem;
+          width: 100%;
+        }
+  
+        .DobleCartaProd {
+  
+          h3.tituloCartaProd {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: map-get($colores, amarillodos);
+          }
+  
+          p.textoCartaProd {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: map-get($colores, amarillodos);
+          }
+        }
+      }
+    }
+  }
+#seccionProdDos {
+  background-image: map-get($colores, fondodos);
+  padding-bottom: 15vh;
+}
+  
