@@ -1,20 +1,37 @@
-header{
+header {
     background-color: map-get($colores, negro);
-    .textoInicio{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+    .textoInicio {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    .lista{
-        ul{
-            li{
-                &:hover{
-                    background-color: map-get($colores, amarillouno);
-                    a {color: map-get($colores, negro);}
-                }
-                a{
-                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                    color: map-get($colores, amarillouno);
-                }
+  
+    .lista {
+      ul {
+        li {
+          &:hover {
+            background-color: map-get($colores, amarillotres);
+            a {
+              color: map-get($colores, negro);
             }
+          }
+          a {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: map-get($colores, amarillotres);
+          }
         }
+      }
     }
-}
+  
+    img {
+      animation: rotateAnimation 500ms linear 4;
+    }
+  
+    @keyframes rotateAnimation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }

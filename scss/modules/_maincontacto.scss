@@ -1,0 +1,11 @@
+#contactoComienzo {
+    background-image: map-get($colores, fondodos);
+    .coMensaje {
+        .form-floating {
+            .mensaje {
+                resize: none;
+                height: 20vh;
+            }
+        }
+    }
+}

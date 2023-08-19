@@ -17,14 +17,25 @@ header .textoInicio {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 header .lista ul li:hover {
-  background-color: rgb(200, 241, 13);
+  background-color: rgb(233, 236, 16);
 }
 header .lista ul li:hover a {
   color: rgb(11, 1, 1);
 }
 header .lista ul li a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: rgb(200, 241, 13);
+  color: rgb(233, 236, 16);
+}
+header img {
+  animation: rotateAnimation 500ms linear 4;
+}
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .tituloContacto, .tituloPreg, .tituloHistoria, .productoProd, .principal {
@@ -890,6 +901,38 @@ header .lista ul li a {
   object-fit: cover;
   width: 100%;
   height: 45vh;
+}
+
+#primeraPreg {
+  background-image: linear-gradient(to top, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856));
+}
+#primeraPreg .contenedorPreg .accordion .accordion-item {
+  color: rgb(226, 230, 15);
+  background-color: rgb(11, 1, 1);
+}
+#primeraPreg .contenedorPreg .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: rgb(11, 1, 1);
+  color: rgb(226, 230, 15);
+}
+#primeraPreg .contenedorPreg .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  background-color: rgb(11, 1, 1);
+  color: rgb(226, 230, 15);
+}
+#primeraPreg .contenedorPreg .accordion .accordion-item .accordion-header .accordion-button:hover {
+  background-color: rgb(226, 230, 15);
+  color: rgb(11, 1, 1);
+}
+#primeraPreg .contenedorPreg .accordion .accordion-item .accordion-collapse .accordion-body {
+  background-color: rgb(226, 230, 15);
+  color: rgb(11, 1, 1);
+}
+
+#contactoComienzo {
+  background-image: linear-gradient(to top, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856));
+}
+#contactoComienzo .coMensaje .form-floating .mensaje {
+  resize: none;
+  height: 20vh;
 }
 
 #btn-mas {
