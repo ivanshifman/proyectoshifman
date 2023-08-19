@@ -35,5 +35,27 @@
 #seccionProdDos {
   background-image: map-get($colores, fondodos);
   padding-bottom: 15vh;
+  .novedadProd {
+    background-color: map-get($colores, negro);
+    h4 {
+      color: map-get($colores, amarillodos);
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+  }
+  .galeriaProduc {
+    .row {
+      .imagenGrilla {
+        @include aya(30vh, 35vw);
+        @include responsive(480px) {
+          @include aya(40vh, 80vw);
+        }
+        img {
+          @include aya(100%, 100%);
+          border: 3px solid map-get($colores, negro);
+          filter: brightness(60%);
+        }
+      }
+    }
+  }
 }
   

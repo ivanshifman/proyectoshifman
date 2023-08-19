@@ -1,0 +1,81 @@
+#primerHistoria {
+    background-image: map-get($colores, fondouno);
+}
+#segundoHistoria {
+    background-image: map-get($colores, fondodos);
+}
+#terceroHistoria {
+    background-image: map-get($colores, fondouno);
+}
+.contenedorTotalHisto {
+    .row {
+        .cartaHistoria {
+            font-size: 25rem;
+            margin-top: 10vh;
+            box-shadow: 2px 2px 8px map-get($colores, negrofiltro);
+            transition: all 500ms ease;
+            &:hover {
+                transform: translateY(-4%);
+            }
+            @include responsive(480px) {
+                margin-top: 5vh;
+            }
+            .imagenCartaHisto {
+                @include aya(20rem, 100%);
+                filter: brightness(80%);
+            }
+            .DobleCartaHisto {
+                h3 {
+                    color: map-get($colores, amarillodos);
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+                p {
+                    color: map-get($colores, amarillodos);
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+            }
+        }
+        .imagenHistoria {
+            @include aya(45vh, 40vw);
+            background-color: map-get($colores, negro);
+            @include responsive(767px) {
+                width: 70vw;
+            }
+            img {
+                @include aya(100%, 100%);
+                filter: brightness(60%);
+                border-top: 5px solid map-get($colores, negro);
+                border-bottom: 5px solid map-get($colores, negro);
+            }
+            .parImgHisto {
+                h3 {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: map-get($colores, amarillodos);
+                }
+                p {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: map-get($colores, amarillodos);
+                }
+            }
+        }
+    }
+}
+//carruselHistoria
+#carruselHisto {
+    background-image: map-get($colores, fondodos);
+    height: 75vh;
+    .ultimoTituloHisto {
+        h4 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    }
+    #carouselDeHisto {
+        .caruselHistoUno {
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 45vh;
+            }
+        }
+    }
+}
