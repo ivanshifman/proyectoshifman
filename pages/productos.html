@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre nuestra exquisita selección de chocolates artesanales. Desde trufas indulgentes hasta tabletas con sabores únicos, en Casa Dulce tenemos lo mejor para ti.">
+    <meta name="keywords" content="chocolates, tabletas, alfajores, sabores, artesanales, delicias">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="../img/logoa.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logoa.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/style.css">
     <title>Casa Dulce - Productos</title>
 </head>
@@ -17,38 +21,46 @@
     <header>
         <nav class="navbar navbar-expand-lg Navheader">
             <div class="container-fluid">
-              <a class="navbar-brand fs-1 ms-3 text-warning textoInicio mx-2 text-decoration-underline" href="../index.html"><img src="../img/logoa.png" width="90" height="90" alt="Logo">Casa Dulce</a>
-              <button class="navbar-toggler border border-2 border-black bg-warning mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon bg-warning fs-4"></span>
-              </button>
-              <div class="collapse navbar-collapse lista" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item rounded-2">
-                    <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item rounded-2">
-                    <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item rounded-2">
-                    <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./historia.html">Historia</a>
-                  </li>
-                  <li class="nav-item rounded-2">
-                    <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./preguta.html">Preguntas</a>
-                  </li>
-                  <li class="nav-item rounded-2">
-                    <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+                <a class="navbar-brand fs-1 ms-3 text-warning textoInicio mx-2 text-decoration-underline animate__animated animate__fadeInUp"
+                    href="../index.html"><img src="../img/logoa.webp" width="90" height="90" alt="Logo">Casa Dulce</a>
+                <button class="navbar-toggler border border-2 border-black bg-warning mx-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-warning fs-4"></span>
+                </button>
+                <div class="collapse navbar-collapse lista" id="navbarNav">
+                    <ul class="navbar-nav ms-auto animate__animated animate__zoomIn">
+                        <li class="nav-item rounded-2">
+                            <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item rounded-2">
+                            <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none"
+                                href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item rounded-2">
+                            <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none"
+                                href="./historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item rounded-2">
+                            <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none"
+                                href="./preguta.html">Preguntas</a>
+                        </li>
+                        <li class="nav-item rounded-2">
+                            <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none"
+                                href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
-      </header>
+        </nav>
+    </header>
 
     <main>
         <div class="productoProd overflow-hidden">
-            <div class="subProductoProd d-flex flex-column justify-content-center align-items-center z-2 overflow-hidden">
-                <h1 class="text-center text-white z-3 fst-italic text-decoration-underline">NUESTROS PRODUCTOS</h1>
-                <h2 class="text-center text-white z-3">Los productos de Casa Dulce desde hace más de 60 años, acompañan
+            <div
+                class="subProductoProd d-flex flex-column justify-content-center align-items-center z-2 overflow-hidden">
+                <h1 class="text-center text-white z-3 fst-italic text-decoration-underline animate__animated animate__slideInDown">NUESTROS PRODUCTOS</h1>
+                <h2 class="text-center text-white z-3 animate__animated animate__slideInUp">Los productos de Casa Dulce desde hace más de 60 años, acompañan
                     los momentos más importantes de la vida.
                 </h2>
             </div>
@@ -57,9 +69,11 @@
             <div class="container-fluid contenedorCartasProduc">
                 <div class="row mt-5 justify-content-evenly align-items-center gap-4">
 
-                    <article class="card h-auto cartaProd bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4">
-                        <img src="../img/alfajorcarta.png" class="card-img-top imagenCarta rounded-4"
-                            alt="cartaalfajor">
+                    <article
+                        class="card h-auto cartaProd bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4"
+                        data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease" data-aos-duration="1100">
+                        <img src="../img/alfajorcarta.webp" class="card-img-top imagenCarta rounded-4"
+                            alt="Ricos alfajores de chocolate.">
                         <div class="card-body DobleCartaProd bg-black">
                             <h3 class="card-title tituloCartaProd fs-2 fw-bold text-decoration-underline">Alfajores de
                                 chocolate
@@ -71,26 +85,31 @@
                         </div>
                     </article>
 
-                    <article class="card h-auto bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4">
-                        <img src="../img/maicenacarta.png" class="card-img-top imagenCarta rounded-4"
-                            alt="cartamaicena">
+                    <article class="card h-auto bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4"
+                        data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease" data-aos-duration="1100">
+                        <img src="../img/maicenacarta.webp" class="card-img-top imagenCarta rounded-4"
+                            alt="Alfajores de maicena, deliciosos.">
                         <div class="card-body DobleCartaProd bg-black">
                             <h3 class="card-title tituloCartaProd fs-2 fw-bold text-decoration-underline">Alfajores de
                                 maicena
                             </h3>
                             <p class="card-text textoCartaProd fs-3">Tentadores alfajores de maicena: suaves galletas
-                                rellenas de dulce de leche, una delicia tradicional para disfrutar sin igual. ¡Únicos y ricos!
+                                rellenas de dulce de leche, una delicia tradicional para disfrutar sin igual. ¡Únicos y
+                                ricos!
                             </p>
                         </div>
                     </article>
                 </div>
                 <div class="row mt-5 justify-content-evenly align-items-center gap-4">
 
-                    <article class="card h-auto cartaProd bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4">
-                        <img src="../img/alfajorfrutalcarta.png" class="card-img-top imagenCarta rounded-4"
-                            alt="alfajorfrutal">
+                    <article
+                        class="card h-auto cartaProd bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4"
+                        data-aos="flip-left" data-aos-offset="70" data-aos-easing="ease" data-aos-duration="1100">
+                        <img src="../img/alfajorfrutalcarta.webp" class="card-img-top imagenCarta rounded-4"
+                            alt="Alfajores frutales, mejor que una fruta.">
                         <div class="card-body DobleCartaProd bg-black">
-                            <h3 class="card-title tituloCartaProd fs-2 fw-bold text-decoration-underline">Alfajores Frutales
+                            <h3 class="card-title tituloCartaProd fs-2 fw-bold text-decoration-underline">Alfajores
+                                Frutales
                             </h3>
                             <p class="card-text textoCartaProd fs-3">
                                 Deliciosos alfajores frutales: galletas tiernas con relleno de frutas frescas, una
@@ -99,10 +118,13 @@
                         </div>
                     </article>
 
-                    <article class="card h-auto cartaProd bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4">
-                        <img src="../img/suizocarta.png" class="card-img-top imagenCarta rounded-4" alt="tabsuizo">
+                    <article
+                        class="card h-auto cartaProd bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4"
+                        data-aos="flip-right" data-aos-offset="70" data-aos-easing="ease" data-aos-duration="1100">
+                        <img src="../img/suizocarta.webp" class="card-img-top imagenCarta rounded-4" alt="Tabletas suizas, importadas y con extrema calidad.">
                         <div class="card-body DobleCartaProd bg-black">
-                            <h3 class="card-title tituloCartaProd fs-2 fw-bold text-decoration-underline">Tabletas suizas
+                            <h3 class="card-title tituloCartaProd fs-2 fw-bold text-decoration-underline">Tabletas
+                                suizas
                                 importadas</h3>
                             <p class="card-text textoCartaProd fs-3">Exquisitas tabletas suizas importadas: auténtico
                                 chocolate suizo de alta calidad, deleite indulgente para los amantes del dulce refinado.
@@ -111,34 +133,45 @@
                     </article>
                 </div>
                 <div class="row mt-5 justify-content-evenly align-items-center gap-4">
-                    <article class="card h-auto cartaProd bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4">
-                        <img src="../img/amargocarta.png" class="card-img-top imagenCarta rounded-4" alt="amargo">
+                    <article
+                        class="card h-auto cartaProd bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4"
+                        data-aos="flip-left" data-aos-offset="70" data-aos-easing="ease" data-aos-duration="1100">
+                        <img src="../img/amargocarta.webp" class="card-img-top imagenCarta rounded-4" alt="Tabletas amargas con cacao de sobra.">
                         <div class="card-body DobleCartaProd bg-black">
-                            <h3 class="card-title tituloCartaProd fs-2 fw-bold text-decoration-underline">Tabletas amargas
+                            <h3 class="card-title tituloCartaProd fs-2 fw-bold text-decoration-underline">Tabletas
+                                amargas
                             </h3>
-                            <p class="card-text textoCartaProd fs-3">Intensas tabletas amargas: sabores audaces de cacao puro
+                            <p class="card-text textoCartaProd fs-3">Intensas tabletas amargas: sabores audaces de cacao
+                                puro
                                 para los paladares sofisticados y amantes del chocolate intenso. Únicas.
                             </p>
                         </div>
                     </article>
 
-                    <article class="card h-auto cartaProd bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4">
-                        <img src="../img/frutacarta.png" class="card-img-top imagenCarta rounded-4" alt="frutal">
+                    <article
+                        class="card h-auto cartaProd bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4"
+                        data-aos="flip-right" data-aos-offset="70" data-aos-easing="ease" data-aos-duration="1100">
+                        <img src="../img/frutacarta.webp" class="card-img-top imagenCarta rounded-4" alt="Tabletas frutales con base de frutas, muy ricas.">
                         <div class="card-body DobleCartaProd bg-black">
-                            <h3 class="card-title tituloCartaProd fs-2 fw-bold text-decoration-underline">Tabletas frutales
+                            <h3 class="card-title tituloCartaProd fs-2 fw-bold text-decoration-underline">Tabletas
+                                frutales
                                 importadas
                             </h3>
-                            <p class="card-text textoCartaProd fs-3">Deliciosas tabletas frutales importadas: mezcla perfecta
+                            <p class="card-text textoCartaProd fs-3">Deliciosas tabletas frutales importadas: mezcla
+                                perfecta
                                 de chocolate y frutas exóticas para una experiencia tropical inolvidable.
                             </p>
                         </div>
                     </article>
                 </div>
                 <div class="row mt-5 justify-content-evenly align-items-center gap-4">
-                    <article class="card h-auto cartaProd bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4">
-                        <img src="../img/bomboncarta.png" class="card-img-top imagenCarta rounded-4" alt="bombones">
+                    <article
+                        class="card h-auto cartaProd bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4"
+                        data-aos="flip-left" data-aos-offset="70" data-aos-easing="ease" data-aos-duration="1100">
+                        <img src="../img/bomboncarta.webp" class="card-img-top imagenCarta rounded-4" alt="Bombones surtidos, elección dudosa al elegir, todos ricos.">
                         <div class="card-body DobleCartaProd bg-black">
-                            <h3 class="card-title tituloCartaProd fs-2 fw-bold text-decoration-underline">Bombones surtidos
+                            <h3 class="card-title tituloCartaProd fs-2 fw-bold text-decoration-underline">Bombones
+                                surtidos
                             </h3>
                             <p class="card-text textoCartaProd fs-3">
                                 Variedad de rellenos irresistibles, cuidadosamente seleccionados para deleitar todos los
@@ -147,13 +180,17 @@
                         </div>
                     </article>
 
-                    <article class="card h-auto cartaProd bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4">
-                        <img src="../img/bombonamargocarta.png" class="card-img-top imagenCarta rounded-4"
-                            alt="bamargo">
+                    <article
+                        class="card h-auto cartaProd bg-black col-sm-5 col-10 pt-3 m-1 border-3 border-warning rounded-4"
+                        data-aos="flip-right" data-aos-offset="70" data-aos-easing="ease" data-aos-duration="1100">
+                        <img src="../img/bombonamargocarta.webp" class="card-img-top imagenCarta rounded-4"
+                            alt="Bombones amargos, únicos y sabrosos con cacao a montones.">
                         <div class="card-body DobleCartaProd bg-black">
-                            <h3 class="card-title tituloCartaProd fs-2 fw-bold text-decoration-underline">Bombones amargos
+                            <h3 class="card-title tituloCartaProd fs-2 fw-bold text-decoration-underline">Bombones
+                                amargos
                             </h3>
-                            <p class="card-text textoCartaProd fs-3">Intensos bombones amargos: equilibrio perfecto de cacao
+                            <p class="card-text textoCartaProd fs-3">Intensos bombones amargos: equilibrio perfecto de
+                                cacao
                                 y sutiles notas, para satisfacer los deseos de los amantes del chocolate intenso.
                             </p>
                         </div>
@@ -163,32 +200,39 @@
             </div>
         </section>
         <section id="seccionProdDos" class="pt-3">
-            <div class="novedadProd d-flex justify-content-center align-items-center pb-2 pt-2 text-center">
+            <div class="novedadProd d-flex justify-content-center align-items-center pb-2 pt-2 text-center"
+                data-aos="fade-down" data-aos-offset="80" data-aos-easing="linear" data-aos-duration="600">
                 <h4 class="fs-1">NOVEDADES Y MUCHO MÁS</h4>
             </div>
 
             <div class="container-fluid galeriaProduc pt-5 mt-5">
                 <div class="row d-flex justify-content-evenly align-content-center col-12 mb-md-5 mx-1">
-                    <div class="imagenGrilla col-md-5 m-2">
-                        <img src="../img/grillauno.png" alt="bombongrilla">
+                    <div class="imagenGrilla col-md-5 m-2" data-aos="flip-left" data-aos-offset="150"
+                        data-aos-easing="ease" data-aos-duration="900">
+                        <img src="../img/grillauno.webp" alt="Bombones deliciosos y surtidos.">
                     </div>
-                    <div class="imagenGrilla col-md-5 m-2">
-                        <img src="../img/grillatableta.png" alt="tabletagrilla">
+                    <div class="imagenGrilla col-md-5 m-2" data-aos="flip-right" data-aos-offset="150"
+                        data-aos-easing="ease" data-aos-duration="900">
+                        <img src="../img/grillatableta.webp" alt="Tabletas a base de leche.">
                     </div>
                     <div class="row d-flex justify-content-evenly align-content-center col-12 mb-md-5 mt-md-5 mx-1">
-                        <div class="imagenGrilla col-md-5 m-2">
-                            <img src="../img/grillahuevo.png" alt="huevogrilla">
+                        <div class="imagenGrilla col-md-5 m-2" data-aos="flip-left" data-aos-offset="150"
+                            data-aos-easing="ease" data-aos-duration="900">
+                            <img src="../img/grillahuevo.webp" alt="Huevos con mix de chocolates, especiales para su debida ocasión.">
                         </div>
-                        <div class="imagenGrilla col-md-5 m-2">
-                            <img src="../img/grillaalfajor.png" alt="alfajorgrilla">
+                        <div class="imagenGrilla col-md-5 m-2" data-aos="flip-right" data-aos-offset="150"
+                            data-aos-easing="ease" data-aos-duration="900">
+                            <img src="../img/grillaalfajor.webp" alt="Alfajor negro de puro chocolate y relleno de dulce de leche.">
                         </div>
                     </div>
                     <div class="row d-flex justify-content-evenly align-content-center col-12 mb-md-1 mx-1">
-                        <div class="imagenGrilla col-md-5 m-2">
-                            <img src="../img/grilladerretido.png" alt="derretidogrilla">
+                        <div class="imagenGrilla col-md-5 m-2" data-aos="flip-left" data-aos-offset="150"
+                            data-aos-easing="ease" data-aos-duration="900">
+                            <img src="../img/grilladerretido.webp" alt="Salsa chocolatera con pedazos de chocolate amargo.">
                         </div>
-                        <div class="imagenGrilla col-md-5 m-2">
-                            <img src="../img/grillablanca.png" alt="blancogrilla">
+                        <div class="imagenGrilla col-md-5 m-2" data-aos="flip-right" data-aos-offset="150"
+                            data-aos-easing="ease" data-aos-duration="900">
+                            <img src="../img/grillablanca.webp" alt="Figuras de chocolate, apta para chicos.">
                         </div>
                     </div>
                 </div>
@@ -214,7 +258,9 @@
             </div>
         </div>
         <div class="volverProd d-flex align-items-center justify-content-center pt-5 pb-4">
-            <a href="../index.html"><input type="button" value="Volver a Inicio" class="rounded-4 fs-2"></a>
+            <a href="../index.html" data-aos="fade-up" data-aos-offset="80" data-aos-easing="linear"
+                data-aos-duration="600"><input type="button" value="Volver a Inicio" class="rounded-4 fs-2">
+            </a>
         </div>
     </main>
 
@@ -235,10 +281,10 @@
         </div>
 
         <div class="derecho">
-                <p>&copy;
-                    Casa Dulce
-                    2023 Diseñado y desarrolado por Iván Shifman.
-                </p>
+            <p>&copy;
+                Casa Dulce
+                2023 Diseñado y desarrolado por Iván Shifman.
+            </p>
         </div>
         <div class="termin">
             <ul>
@@ -249,8 +295,12 @@
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

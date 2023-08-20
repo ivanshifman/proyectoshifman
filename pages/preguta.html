@@ -4,11 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Encuentra respuestas a tus preguntas. Desde información sobre nuestros productos hasta detalles sobre el proceso de elaboración, aquí tienes todo lo que necesitas saber en Casa Dulce.">
+  <meta name="keywords" content="preguntas frecuentes, consultas comunes, respuestas, dudas">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="shortcut icon" href="../img/logoa.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/logoa.webp" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="../css/style.css">
   <title>Casa Dulce - Preguntas frecuentes</title>
 </head>
@@ -16,39 +20,42 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg Navheader">
-        <div class="container-fluid">
-          <a class="navbar-brand fs-1 ms-3 text-warning textoInicio mx-2 text-decoration-underline" href="../index.html"><img src="../img/logoa.png" width="90" height="90" alt="Logo">Casa Dulce</a>
-          <button class="navbar-toggler border border-2 border-black bg-warning mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon bg-warning fs-4"></span>
-          </button>
-          <div class="collapse navbar-collapse lista" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item rounded-2">
-                <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item rounded-2">
-                <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./productos.html">Productos</a>
-              </li>
-              <li class="nav-item rounded-2">
-                <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./historia.html">Historia</a>
-              </li>
-              <li class="nav-item rounded-2">
-                <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./preguta.html">Preguntas</a>
-              </li>
-              <li class="nav-item rounded-2">
-                <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand fs-1 ms-3 text-warning textoInicio mx-2 text-decoration-underline animate__animated animate__fadeInUp"
+          href="../index.html"><img src="../img/logoa.webp" width="90" height="90" alt="Logo">Casa Dulce</a>
+        <button class="navbar-toggler border border-2 border-black bg-warning mx-2" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-warning fs-4"></span>
+        </button>
+        <div class="collapse navbar-collapse lista" id="navbarNav">
+          <ul class="navbar-nav ms-auto animate__animated animate__zoomIn">
+            <li class="nav-item rounded-2">
+              <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item rounded-2">
+              <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item rounded-2">
+              <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./historia.html">Historia</a>
+            </li>
+            <li class="nav-item rounded-2">
+              <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./preguta.html">Preguntas</a>
+            </li>
+            <li class="nav-item rounded-2">
+              <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
   </header>
 
   <main>
     <div class="tituloPreg overflow-hidden">
       <div class="subTituloPreg d-flex flex-column justify-content-center align-items-center z-2 overflow-hidden">
-        <h1 class="text-center text-white z-3 fst-italic text-decoration-underline">PREGUNTAS FRECUENTES</h1>
-        <h2 class="text-center text-white z-3">Bienvenido a nuestra sección de preguntas, aqui respondemos sus dudas
+        <h1 class="text-center text-white z-3 fst-italic text-decoration-underline animate__animated animate__slideInDown">PREGUNTAS FRECUENTES</h1>
+        <h2 class="text-center text-white z-3 animate__animated animate__slideInUp">Bienvenido a nuestra sección de preguntas, aqui respondemos sus dudas
           generales.</h2>
       </div>
     </div>
@@ -58,9 +65,9 @@
         <div class="accordion" id="accordionExample">
           <article class="accordion-item border-2 border-black rounded-top-3">
             <div class="accordion-header">
-              <button class="accordion-button collapsed rounded-top-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                aria-expanded="true" aria-controls="collapseOne">
-                <h3 class="fs-3" >¿Cuándo fue inaugurada Casa Dulce?</h3>
+              <button class="accordion-button collapsed rounded-top-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h3 class="fs-3">¿Cuándo fue inaugurada Casa Dulce?</h3>
               </button>
             </div>
             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
@@ -78,8 +85,10 @@
             </div>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="fs-4 fw-bold">Estamos ubicados en el corazón de la Ciudad de Buenos Aires en el barrio de Palermo, calle Santa
-                  Fe al 3653.</p>
+                <p class="fs-4 fw-bold">Estamos ubicados en el corazón de la Ciudad de Buenos Aires en el barrio de
+                  Palermo, calle Santa
+                  Fe al 3653.
+                </p>
               </div>
             </div>
           </article>
@@ -92,8 +101,10 @@
             </div>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="fs-4 fw-bold">En Dulce Casa ofrecemos una amplia variedad de productos de chocolate, que incluyen trufas,
-                  bombones, tabletas de chocolate, chocolate caliente, y mucho más.</p>
+                <p class="fs-4 fw-bold">En Dulce Casa ofrecemos una amplia variedad de productos de chocolate, que
+                  incluyen trufas,
+                  bombones, tabletas de chocolate, chocolate caliente, y mucho más.
+                </p>
               </div>
             </div>
           </article>
@@ -106,8 +117,10 @@
             </div>
             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="fs-4 fw-bold">Sí, en Casa Dulce nos enorgullece utilizar solo los ingredientes más finos y de la más alta
-                  calidad en la elaboración de nuestros chocolates.</p>
+                <p class="fs-4 fw-bold">Sí, en Casa Dulce nos enorgullece utilizar solo los ingredientes más finos y de
+                  la más alta
+                  calidad en la elaboración de nuestros chocolates.
+                </p>
               </div>
             </div>
           </article>
@@ -120,8 +133,10 @@
             </div>
             <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="fs-4 fw-bold">Sí, entendemos las necesidades dietéticas especiales de nuestros clientes. Ofrecemos opciones
-                  sin azúcar y sin gluten en nuestra selección de chocolates</p>
+                <p class="fs-4 fw-bold">Sí, entendemos las necesidades dietéticas especiales de nuestros clientes.
+                  Ofrecemos opciones
+                  sin azúcar y sin gluten en nuestra selección de chocolates.
+                </p>
               </div>
             </div>
           </article>
@@ -134,8 +149,10 @@
             </div>
             <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="fs-4 fw-bold">¡Por supuesto! En Casa Dulce nos encanta ayudar a hacer tus eventos especiales aún más dulces.
-                  Puedes contactarnos para discutir tus necesidades y hacer pedidos personalizados.</p>
+                <p class="fs-4 fw-bold">¡Por supuesto! En Casa Dulce nos encanta ayudar a hacer tus eventos especiales
+                  aún más dulces.
+                  Puedes contactarnos para discutir tus necesidades y hacer pedidos personalizados.
+                </p>
               </div>
             </div>
           </article>
@@ -148,8 +165,10 @@
             </div>
             <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="fs-4 fw-bold">Sí, realizamos envíos de nuestros productos dentro de Argentina y a nivel internacional. Puedes
-                  consultar los detalles y opciones de envío en nuestra página web.</p>
+                <p class="fs-4 fw-bold">Sí, realizamos envíos de nuestros productos dentro de Argentina y a nivel
+                  internacional. Puedes
+                  consultar los detalles y opciones de envío en nuestra página web.
+                </p>
               </div>
             </div>
           </article>
@@ -162,8 +181,10 @@
             </div>
             <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="fs-4 fw-bold">Sí, ofrecemos opciones de regalos y canastas de regalo con nuestros deliciosos chocolates. Son el
-                  regalo perfecto para cumpleaños, aniversarios, y cualquier ocasión especial.</p>
+                <p class="fs-4 fw-bold">Sí, ofrecemos opciones de regalos y canastas de regalo con nuestros deliciosos
+                  chocolates. Son el
+                  regalo perfecto para cumpleaños, aniversarios, y cualquier ocasión especial.
+                </p>
               </div>
             </div>
           </article>
@@ -176,9 +197,11 @@
             </div>
             <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="fs-4 fw-bold">Sí, en Dulce Casa ocasionalmente organizamos eventos y talleres de chocolatería. Mantente atento
+                <p class="fs-4 fw-bold">Sí, en Dulce Casa ocasionalmente organizamos eventos y talleres de chocolatería.
+                  Mantente atento
                   a nuestras redes sociales y página web para conocer las fechas y detalles de los próximos
-                  eventos.</p>
+                  eventos.
+                </p>
               </div>
             </div>
           </article>
@@ -191,8 +214,10 @@
             </div>
             <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p class="fs-4 fw-bold">No es necesario hacer una reserva para visitar nuestra chocolatería. ¡Estamos listos para
-                  recibirte en cualquier momento durante nuestro horario de atención!( de 8 a 20hs).</p>
+                <p class="fs-4 fw-bold">No es necesario hacer una reserva para visitar nuestra chocolatería. ¡Estamos
+                  listos para
+                  recibirte en cualquier momento durante nuestro horario de atención!( de 8 a 20hs).
+                </p>
               </div>
             </div>
           </article>
@@ -218,7 +243,9 @@
       </div>
     </div>
     <div class="volverProd d-flex align-items-center justify-content-center pt-5 pb-4">
-      <a href="../index.html"><input type="button" value="Volver a Inicio" class="rounded-4 fs-2"></a>
+      <a href="../index.html" data-aos="fade-up" data-aos-offset="80" data-aos-easing="linear"
+        data-aos-duration="600"><input type="button" value="Volver a Inicio" class="rounded-4 fs-2">
+      </a>
     </div>
 
 
@@ -241,10 +268,10 @@
     </div>
 
     <div class="derecho">
-        <p>&copy;
-          Casa Dulce
-          2023 Diseñado y desarrolado por Iván Shifman.
-        </p>
+      <p>&copy;
+        Casa Dulce
+        2023 Diseñado y desarrolado por Iván Shifman.
+      </p>
     </div>
     <div class="termin">
       <ul>
@@ -252,12 +279,15 @@
         <li><a href="../index.html">Términos y condiciones</a></li>
       </ul>
     </div>
-
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

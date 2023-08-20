@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora el mundo del chocolate en Casa Dulce. Delicias artesanales que endulzan momentos únicos.">
+    <meta name="keywords" content="chocolatería, chocolates artesanales, dulces, postres, indulgencia, sabores, cacao, delicias, Casa Dulce">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="./img/logoa.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logoa.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <title>Casa Dulce - Inicio</title>
 </head>
@@ -18,38 +21,45 @@
     <header>
         <nav class="navbar navbar-expand-lg Navheader">
             <div class="container-fluid">
-              <a class="navbar-brand fs-1 ms-3 text-warning textoInicio mx-2 text-decoration-underline" href="./index.html"><img src="./img/logoa.png" width="90" height="90" alt="Logo">Casa Dulce</a>
-              <button class="navbar-toggler border border-2 border-black bg-warning mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon bg-warning fs-4"></span>
-              </button>
-              <div class="collapse navbar-collapse lista" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item rounded-2">
-                    <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item rounded-2">
-                    <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./pages/productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item rounded-2">
-                    <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./pages/historia.html">Historia</a>
-                  </li>
-                  <li class="nav-item rounded-2">
-                    <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./pages/preguta.html">Preguntas</a>
-                  </li>
-                  <li class="nav-item rounded-2">
-                    <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./pages/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+                <a class="navbar-brand fs-1 ms-3 text-warning textoInicio mx-2 text-decoration-underline animate__animated animate__fadeInUp"
+                    href="./index.html"><img src="./img/logoa.webp" width="90" height="90" alt="Logo">Casa Dulce</a>
+                <button class="navbar-toggler border border-2 border-black bg-warning mx-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-warning fs-4"></span>
+                </button>
+                <div class="collapse navbar-collapse lista" id="navbarNav">
+                    <ul class="navbar-nav ms-auto animate__animated animate__zoomIn">
+                        <li class="nav-item rounded-2">
+                            <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item rounded-2">
+                            <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none"
+                                href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item rounded-2">
+                            <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none"
+                                href="./pages/historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item rounded-2">
+                            <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none"
+                                href="./pages/preguta.html">Preguntas</a>
+                        </li>
+                        <li class="nav-item rounded-2">
+                            <a class="nav-link fs-3 mx-4 fw-bold text-decoration-none"
+                                href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
-      </header>
-      
+        </nav>
+    </header>
+
     <main>
         <div class="principal">
             <div class="subprin">
-                <h1 class="titulo">¡Bienvenidos a Casa Dulce!</h1>
-                <h2> Descubre un paraíso chocolatero en nuestra tienda virtual.
+                <h1 class="titulo animate__animated animate__slideInDown">¡Bienvenidos a Casa Dulce!</h1>
+                <h2 class="animate__animated animate__slideInUp"> Descubre un paraíso chocolatero en nuestra tienda virtual.
                     Deliciosos chocolates que endulzarán tus sentidos. Esperamos tu visita.
                 </h2>
             </div>
@@ -57,19 +67,21 @@
 
         <section id="primero">
             <div class="triplecont">
-                <h3>NUESTRA TRIPLE C</h3>
+                <h3 class="animate__animated animate__fadeIn">NUESTRA TRIPLE C</h3>
             </div>
             <div class="primer">
                 <div class="conteuno">
-                    <figure class="primeri">
-                        <img src="./img/negrouno.png" alt="chocouno">
+                    <figure class="primeri" data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease"
+                        data-aos-duration="800">
+                        <img src="./img/negrouno.webp" alt="Chocolate italiano, dulce y sabroso.">
                         <div class="capauno">
                             <h4>CALIDAD</h4>
                             <p>El chocolate de calidad deleita los sentidos con exquisitez.</p>
                         </div>
                     </figure>
                 </div>
-                <div class="paruno">
+                <div class="paruno" data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease"
+                    data-aos-duration="800">
                     <h4>CALIDAD</h4>
                     <p>
                         Nuestros productos de chocolate se destacan por su excelente calidad.
@@ -80,15 +92,17 @@
             </div>
             <div class="segundo">
                 <div class="contedos">
-                    <figure class="segundi">
-                        <img src="./img/negrodos.png" alt="chocodos">
+                    <figure class="segundi" data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease"
+                        data-aos-duration="800">
+                        <img src="./img/negrodos.webp" alt="Chocolate suizo, encantador.">
                         <div class="capados">
                             <h4>CREMOSIDAD</h4>
                             <p>El chocolate derretido se desliza en suavidad cremosa.</p>
                         </div>
                     </figure>
                 </div>
-                <div class="pardos">
+                <div class="pardos" data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease"
+                    data-aos-duration="800">
                     <h4>CREMOSIDAD</h4>
                     <p>
                         La textura cremosa es una característica distintiva de nuestros chocolates.
@@ -99,15 +113,17 @@
             </div>
             <div class="tercero">
                 <div class="contetres">
-                    <figure class="terceri">
-                        <img src="./img/negrotres.png" alt="chocotres">
+                    <figure class="terceri" data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease"
+                        data-aos-duration="800">
+                        <img src="./img/negrotres.webp" alt="Chocolate argentino, nacional y único.">
                         <div class="capatres">
                             <h4>CREATIVIDAD</h4>
                             <p>El chocolate, un lienzo dulce y versátil, despierta creatividad.</p>
                         </div>
                     </figure>
                 </div>
-                <div class="partres">
+                <div class="partres" data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease"
+                    data-aos-duration="800">
                     <h4>CREATIVIDAD</h4>
                     <p>
                         En Casa Dulce, la creatividad es parte fundamental de nuestros productos.
@@ -122,7 +138,7 @@
                 <div class="carousel-inner caruseluno">
                     <div class="carousel-item active itemIndex">
                         <div class="container contenedorRes">
-                            <img src="./img/personauno.png" alt="Horacio" class="testimonio-imagen">
+                            <img src="./img/personauno.webp" alt="Horacio y su comentario." class="testimonio-imagen">
                             <p class="testimonio-texto">
                                 "Los productos de chocolate de Casa Dulce son irresistibles. Su sabor intenso, textura
                                 sedosa y variedad de opciones hacen que cada bocado sea una experiencia deliciosa y
@@ -132,7 +148,7 @@
                     </div>
                     <div class="carousel-item itemIndex">
                         <div class="container contenedorRes">
-                            <img src="./img/personados.png" alt="Mariela" class="testimonio-imagen">
+                            <img src="./img/personados.webp" alt="Mariela y su comentario." class="testimonio-imagen">
                             <p class="testimonio-texto">
                                 "Los productos de chocolate de Casa Dulce son una deliciosa tentación que derretirá tu
                                 paladar. Con su calidad inigualable y sabores cautivadores, te transportarán a un mundo
@@ -142,7 +158,7 @@
                     </div>
                     <div class="carousel-item itemIndex">
                         <div class="container contenedorRes">
-                            <img src="./img/personatres.png" alt="Juan" class="testimonio-imagen">
+                            <img src="./img/personatres.webp" alt="Juan y su comentario." class="testimonio-imagen">
                             <p class="testimonio-texto">
                                 "Casa Dulce ha conquistado mi corazón con sus productos de chocolate. Cada bocado es una
                                 experiencia celestial: suaves trufas, crujientes pralinés y exquisitas barras que
@@ -164,19 +180,28 @@
             </div>
             <div class="finalIndex">
                 <div class="IndexProducto">
-                    <h5 class="pTit">PRODUCTOS</h5>
-                    <p>Los productos CASA DULCE poseen más de 60 años.</p>
-                    <a href="./pages/productos.html">
+                    <h5 class="pTit" data-aos="fade-down" data-aos-offset="80" data-aos-easing="linear"
+                        data-aos-duration="600">PRODUCTOS</h5>
+                    <p data-aos="fade-down" data-aos-offset="80" data-aos-easing="linear" data-aos-duration="600">
+                        Los productos CASA DULCE poseen más de 60 años.
+                    </p>
+                    <a href="./pages/productos.html" data-aos="fade-down" data-aos-offset="80" data-aos-easing="linear"
+                        data-aos-duration="600">
                         <input type="submit" value="Conocé nuestros productos">
                     </a>
                 </div>
                 <div class="seguirIndex">
-                    <h5>Seguinos en nuestras redes</h5>
+                    <h5 data-aos="fade-down" data-aos-offset="80" data-aos-easing="linear"
+                    data-aos-duration="600">Seguinos en nuestras redes</h5>
                 </div>
                 <div class="IndexHistoria">
-                    <h5 class="pTit">HISTORIA</h5>
-                    <p>Nuestra historia, donde todo ha comenzado.</p>
-                    <a href="./pages/historia.html">
+                    <h5 class="pTit" data-aos="fade-down" data-aos-offset="80" data-aos-easing="linear"
+                        data-aos-duration="600">HISTORIA</h5>
+                    <p data-aos="fade-down" data-aos-offset="80" data-aos-easing="linear" data-aos-duration="600">
+                        Nuestra historia, donde todo ha comenzado.
+                    </p>
+                    <a href="./pages/historia.html" data-aos="fade-down" data-aos-offset="80" data-aos-easing="linear"
+                        data-aos-duration="600">
                         <input type="submit" value="Conocé nuestra historia">
                     </a>
                 </div>
@@ -224,10 +249,10 @@
             </div>
         </div>
         <div class="derecho">
-                <p>&copy;
-                    Casa Dulce
-                    2023 Diseñado y desarrolado por Iván Shifman.
-                </p>
+            <p>&copy;
+                Casa Dulce
+                2023 Diseñado y desarrolado por Iván Shifman.
+            </p>
         </div>
         <div class="termin">
             <ul>
@@ -238,8 +263,11 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous">
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
