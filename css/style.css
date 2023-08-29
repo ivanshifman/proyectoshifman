@@ -80,7 +80,7 @@ header img {
   transition: all 500ms ease-out;
 }
 
-#primero .tercero .partres h4, #primero .segundo .pardos h4, #primero .primer .paruno h4 {
+#primero .tercero .partres h3, #primero .segundo .pardos h3, #primero .primer .paruno h3 {
   font-size: 2.8rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: rgba(214, 167, 12, 0.856);
@@ -111,12 +111,13 @@ header img {
   background-attachment: fixed;
 }
 
-.finalIndex .IndexHistoria h5, .finalIndex .IndexProducto h5 {
+.finalIndex .IndexHistoria h4, .finalIndex .IndexProducto h4 {
   font-size: 3.2rem;
   color: rgb(233, 236, 16);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   text-decoration: underline;
+  text-shadow: 3px 4px 3px rgb(11, 1, 1);
 }
 
 .finalIndex .IndexHistoria p, .finalIndex .IndexProducto p {
@@ -124,6 +125,7 @@ header img {
   color: rgb(201, 243, 12);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
+  text-shadow: 2px 2px 2px rgb(11, 1, 1);
 }
 
 .finalIndex .IndexHistoria input, .finalIndex .IndexProducto input {
@@ -137,7 +139,8 @@ header img {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.redes a, .btn-mas span {
+.redes a,
+.btn-mas span {
   display: block;
   background-color: rgb(11, 1, 1);
   color: rgb(200, 241, 13);
@@ -152,7 +155,7 @@ header img {
 
 .principal {
   overflow: hidden;
-  background-image: url(https://www.mantelacuadros.com/wp-content/uploads/2019/10/portada-chocolate-claudio-corallo-mejor-chocolate-mundo.jpg);
+  background-image: url("../img/portadaindex.webp");
 }
 .principal .subprin {
   display: flex;
@@ -172,44 +175,44 @@ header img {
   text-align: center;
   font-size: 4.3rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
 }
-.principal .subprin h2 {
+.principal .subprin p {
   font-size: 2.2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
   z-index: 3;
   text-align: center;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
   .principal .subprin .titulo {
-    font-size: 3.2rem;
+    font-size: 4.2rem;
   }
-  .principal .subprin h2 {
-    font-size: 1.6rem;
+  .principal .subprin p {
+    font-size: 2rem;
   }
 }
 @media (max-width: 480px) {
   .principal .subprin .titulo {
-    font-size: 2.2rem;
+    font-size: 3.5rem;
   }
-  .principal .subprin h2 {
-    font-size: 0.9rem;
+  .principal .subprin p {
+    font-size: 1.6rem;
   }
 }
 .productoProd {
-  background-image: url(https://img2.rtve.es/imagenes/10-cosas-sabias-sobre-chocolate/1674817846688.jpg);
+  background-image: url("../img/portadaprod.webp");
 }
 .productoProd .subProductoProd {
   height: 50vh;
   background-color: rgba(11, 1, 1, 0.8);
 }
 .productoProd .subProductoProd h1 {
-  font-size: 4.3rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.productoProd .subProductoProd h2 {
-  font-size: 2.2rem;
+.productoProd .subProductoProd p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -220,34 +223,18 @@ header img {
   .productoProd .subProductoProd {
     height: 40vh;
   }
-  .productoProd .subProductoProd h1 {
-    font-size: 3rem;
-  }
-  .productoProd .subProductoProd h2 {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 480px) {
-  .productoProd .subProductoProd h1 {
-    font-size: 2rem;
-  }
-  .productoProd .subProductoProd h2 {
-    font-size: 1rem;
-  }
 }
 .tituloHistoria {
-  background-image: url(https://px.fotos.cdn.0223.com.ar/f/082022/1659463256170.webp?cw=1070&ch=602&extw=jpeg);
+  background-image: url("../img/portadahisto.webp");
 }
 .tituloHistoria .subTituloHisto {
   height: 50vh;
   background-color: rgba(11, 1, 1, 0.8);
 }
 .tituloHistoria .subTituloHisto h1 {
-  font-size: 4.3rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.tituloHistoria .subTituloHisto h2 {
-  font-size: 2.2rem;
+.tituloHistoria .subTituloHisto p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -258,34 +245,18 @@ header img {
   .tituloHistoria .subTituloHisto {
     height: 40vh;
   }
-  .tituloHistoria .subTituloHisto h1 {
-    font-size: 3rem;
-  }
-  .tituloHistoria .subTituloHisto h2 {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 480px) {
-  .tituloHistoria .subTituloHisto h1 {
-    font-size: 2rem;
-  }
-  .tituloHistoria .subTituloHisto h2 {
-    font-size: 1rem;
-  }
 }
 .tituloPreg {
-  background-image: url(https://www.delicias.tv/blog/wp-content/uploads/2016/11/Chocolate-Portada.jpg);
+  background-image: url("../img/portadapreg.webp");
 }
 .tituloPreg .subTituloPreg {
   height: 50vh;
   background-color: rgba(11, 1, 1, 0.8);
 }
 .tituloPreg .subTituloPreg h1 {
-  font-size: 4.3rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.tituloPreg .subTituloPreg h2 {
-  font-size: 2.2rem;
+.tituloPreg .subTituloPreg p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -296,34 +267,18 @@ header img {
   .tituloPreg .subTituloPreg {
     height: 40vh;
   }
-  .tituloPreg .subTituloPreg h1 {
-    font-size: 3rem;
-  }
-  .tituloPreg .subTituloPreg h2 {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 480px) {
-  .tituloPreg .subTituloPreg h1 {
-    font-size: 2rem;
-  }
-  .tituloPreg .subTituloPreg h2 {
-    font-size: 1rem;
-  }
 }
 .tituloContacto {
-  background-image: url(https://e1.pxfuel.com/desktop-wallpaper/531/524/desktop-wallpaper-chocolate-bar.jpg);
+  background-image: url("../img/portadacontac.webp");
 }
 .tituloContacto .subTituloContacto {
   height: 50vh;
   background-color: rgba(11, 1, 1, 0.8);
 }
 .tituloContacto .subTituloContacto h1 {
-  font-size: 4.3rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.tituloContacto .subTituloContacto h2 {
-  font-size: 2.2rem;
+.tituloContacto .subTituloContacto p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -333,20 +288,6 @@ header img {
   }
   .tituloContacto .subTituloContacto {
     height: 40vh;
-  }
-  .tituloContacto .subTituloContacto h1 {
-    font-size: 3rem;
-  }
-  .tituloContacto .subTituloContacto h2 {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 480px) {
-  .tituloContacto .subTituloContacto h1 {
-    font-size: 2rem;
-  }
-  .tituloContacto .subTituloContacto h2 {
-    font-size: 1rem;
   }
 }
 #primero {
@@ -367,7 +308,7 @@ header img {
   padding: 5px 0 5px 0;
   grid-area: triple;
 }
-#primero .triplecont h3 {
+#primero .triplecont h2 {
   font-size: 2.8rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(241, 180, 13);
@@ -392,7 +333,7 @@ header img {
 #primero .primer .conteuno .primeri:hover > img {
   transform: scale(1.3);
 }
-#primero .primer .conteuno .primeri .capauno h4 {
+#primero .primer .conteuno .primeri .capauno h3 {
   text-decoration: underline;
   font-size: 2.3rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -427,7 +368,7 @@ header img {
 #primero .segundo .contedos .segundi:hover > img {
   transform: scale(1.3);
 }
-#primero .segundo .contedos .segundi .capados h4 {
+#primero .segundo .contedos .segundi .capados h3 {
   text-decoration: underline;
   font-size: 2.3rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -462,7 +403,7 @@ header img {
 #primero .tercero .contetres .terceri:hover > img {
   transform: scale(1.3);
 }
-#primero .tercero .contetres .terceri .capatres h4 {
+#primero .tercero .contetres .terceri .capatres h3 {
   text-decoration: underline;
   font-size: 2.3rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -487,7 +428,7 @@ header img {
   #primero .triplecont {
     padding: 3px 0 3px 0;
   }
-  #primero .triplecont h3 {
+  #primero .triplecont h2 {
     font-size: 2.2rem;
   }
   #primero .primer {
@@ -503,13 +444,13 @@ header img {
   #primero .primer .conteuno .primeri {
     width: 100%;
   }
-  #primero .primer .conteuno .primeri .capauno h4 {
+  #primero .primer .conteuno .primeri .capauno h3 {
     font-size: 2.5rem;
   }
   #primero .primer .conteuno .primeri .capauno p {
     font-size: 1.9rem;
   }
-  #primero .primer .paruno h4 {
+  #primero .primer .paruno h3 {
     font-size: 2.5rem;
   }
   #primero .primer .paruno p {
@@ -529,13 +470,13 @@ header img {
   #primero .segundo .contedos .segundi {
     width: 100%;
   }
-  #primero .segundo .contedos .segundi .capados h4 {
+  #primero .segundo .contedos .segundi .capados h3 {
     font-size: 2.5rem;
   }
   #primero .segundo .contedos .segundi .capados p {
     font-size: 1.9rem;
   }
-  #primero .segundo .pardos h4 {
+  #primero .segundo .pardos h3 {
     font-size: 2.5rem;
   }
   #primero .segundo .pardos p {
@@ -555,13 +496,13 @@ header img {
   #primero .tercero .contetres .terceri {
     width: 100%;
   }
-  #primero .tercero .contetres .terceri .capatres h4 {
+  #primero .tercero .contetres .terceri .capatres h3 {
     font-size: 2.5rem;
   }
   #primero .tercero .contetres .terceri .capatres p {
     font-size: 1.9rem;
   }
-  #primero .tercero .partres h4 {
+  #primero .tercero .partres h3 {
     font-size: 2.5rem;
   }
   #primero .tercero .partres p {
@@ -577,7 +518,7 @@ header img {
   #primero .triplecont {
     padding: 0px;
   }
-  #primero .triplecont h3 {
+  #primero .triplecont h2 {
     font-size: 1.8rem;
   }
   #primero .primer .conteuno {
@@ -586,13 +527,13 @@ header img {
   #primero .primer .conteuno .primeri {
     height: 100%;
   }
-  #primero .primer .conteuno .primeri .capauno h4 {
+  #primero .primer .conteuno .primeri .capauno h3 {
     font-size: 1.8rem;
   }
   #primero .primer .conteuno .primeri .capauno p {
     font-size: 1.5rem;
   }
-  #primero .primer .paruno h4 {
+  #primero .primer .paruno h3 {
     font-size: 2.2rem;
   }
   #primero .primer .paruno p {
@@ -605,13 +546,13 @@ header img {
   #primero .segundo .contedos .segundi {
     height: 100%;
   }
-  #primero .segundo .contedos .segundi .capados h4 {
+  #primero .segundo .contedos .segundi .capados h3 {
     font-size: 1.8rem;
   }
   #primero .segundo .contedos .segundi .capados p {
     font-size: 1.5rem;
   }
-  #primero .segundo .pardos h4 {
+  #primero .segundo .pardos h3 {
     font-size: 2.2rem;
   }
   #primero .segundo .pardos p {
@@ -624,13 +565,13 @@ header img {
   #primero .tercero .contetres .terceri {
     height: 100%;
   }
-  #primero .tercero .contetres .terceri .capatres h4 {
+  #primero .tercero .contetres .terceri .capatres h3 {
     font-size: 1.8rem;
   }
   #primero .tercero .contetres .terceri .capatres p {
     font-size: 1.5rem;
   }
-  #primero .tercero .partres h4 {
+  #primero .tercero .partres h3 {
     font-size: 2.2rem;
   }
   #primero .tercero .partres p {
@@ -692,7 +633,7 @@ header img {
 }
 .finalIndex .IndexProducto {
   grid-area: indexProducto;
-  background-image: url(https://img.freepik.com/fotos-premium/chocolates-surtidos-colocan-paleta-artistica-sobre-fondo-madera-calida_436767-117.jpg?w=2000);
+  background-image: url("../img/portadaindprod.webp");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -711,7 +652,7 @@ header img {
   align-items: center;
   justify-content: center;
 }
-.finalIndex .seguirIndex h5 {
+.finalIndex .seguirIndex h4 {
   font-size: 4rem;
   color: rgb(226, 230, 15);
   font-weight: 400;
@@ -719,7 +660,7 @@ header img {
 }
 .finalIndex .IndexHistoria {
   grid-area: IndexHistoria;
-  background-image: url(https://media.ambito.com/p/5206e614d0b455aec270efe4ab2843dd/adjuntos/239/imagenes/039/619/0039619740/1200x675/smart/chocolate.jpg);
+  background-image: url("../img/portadaindhis.webp");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -731,7 +672,7 @@ header img {
   color: rgb(11, 1, 1);
 }
 @media (max-width: 768px) {
-  .finalIndex .IndexProducto h5, .finalIndex .IndexHistoria h5 {
+  .finalIndex .IndexProducto h4, .finalIndex .IndexHistoria h4 {
     font-size: 2.4rem;
   }
   .finalIndex .IndexProducto p, .finalIndex .IndexHistoria p {
@@ -747,12 +688,12 @@ header img {
   .finalIndex .IndexProducto input:hover, .finalIndex .IndexHistoria input:hover {
     border: 3px solid rgb(11, 1, 1);
   }
-  .finalIndex .seguirIndex h5 {
+  .finalIndex .seguirIndex h4 {
     font-size: 3rem;
   }
 }
 @media (max-width: 480px) {
-  .finalIndex .IndexProducto h5, .finalIndex .IndexHistoria h5 {
+  .finalIndex .IndexProducto h4, .finalIndex .IndexHistoria h4 {
     font-size: 1.9rem;
   }
   .finalIndex .IndexProducto p, .finalIndex .IndexHistoria p {
@@ -765,7 +706,7 @@ header img {
     width: 200px;
     font-size: 1.3rem;
   }
-  .finalIndex .seguirIndex h5 {
+  .finalIndex .seguirIndex h4 {
     font-size: 2.4rem;
   }
 }
@@ -785,10 +726,10 @@ header img {
   transform: translateY(-2%);
 }
 #seccioncardsProd .contenedorCartasProduc .card img.imagenCarta {
-  height: 15rem;
+  height: 30rem;
   width: 100%;
 }
-#seccioncardsProd .contenedorCartasProduc .card .DobleCartaProd h3.tituloCartaProd {
+#seccioncardsProd .contenedorCartasProduc .card .DobleCartaProd h2.tituloCartaProd {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(226, 230, 15);
 }
@@ -804,15 +745,15 @@ header img {
 #seccionProdDos .novedadProd {
   background-color: rgb(11, 1, 1);
 }
-#seccionProdDos .novedadProd h4 {
+#seccionProdDos .novedadProd h3 {
   color: rgb(226, 230, 15);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 #seccionProdDos .galeriaProduc .row .imagenGrilla {
-  height: 30vh;
-  width: 35vw;
+  height: 50vh;
+  width: 40vw;
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   #seccionProdDos .galeriaProduc .row .imagenGrilla {
     height: 40vh;
     width: 80vw;
@@ -823,6 +764,7 @@ header img {
   width: 100%;
   border: 3px solid rgb(11, 1, 1);
   filter: brightness(60%);
+  object-fit: cover;
 }
 
 #primerHistoria {
@@ -838,7 +780,6 @@ header img {
 }
 
 .contenedorTotalHisto .row .cartaHistoria {
-  font-size: 25rem;
   margin-top: 10vh;
   box-shadow: 2px 2px 8px rgba(11, 1, 1, 0.8);
   transition: all 500ms ease;
@@ -852,11 +793,11 @@ header img {
   }
 }
 .contenedorTotalHisto .row .cartaHistoria .imagenCartaHisto {
-  height: 20rem;
+  height: 30rem;
   width: 100%;
   filter: brightness(80%);
 }
-.contenedorTotalHisto .row .cartaHistoria .DobleCartaHisto h3 {
+.contenedorTotalHisto .row .cartaHistoria .DobleCartaHisto h2 {
   color: rgb(226, 230, 15);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -881,7 +822,7 @@ header img {
   border-top: 5px solid rgb(11, 1, 1);
   border-bottom: 5px solid rgb(11, 1, 1);
 }
-.contenedorTotalHisto .row .imagenHistoria .parImgHisto h3 {
+.contenedorTotalHisto .row .imagenHistoria .parImgHisto h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(226, 230, 15);
 }
@@ -894,7 +835,7 @@ header img {
   background-image: linear-gradient(to top, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856));
   height: 75vh;
 }
-#carruselHisto .ultimoTituloHisto h4 {
+#carruselHisto .ultimoTituloHisto h3 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 #carruselHisto #carouselDeHisto .caruselHistoUno img {
@@ -922,6 +863,9 @@ header img {
   background-color: rgb(226, 230, 15);
   color: rgb(11, 1, 1);
 }
+#primeraPreg .contenedorPreg .accordion .accordion-item .accordion-header .accordion-button:focus {
+  outline: 2px solid rgba(244, 248, 15, 0.877);
+}
 #primeraPreg .contenedorPreg .accordion .accordion-item .accordion-collapse .accordion-body {
   background-color: rgb(226, 230, 15);
   color: rgb(11, 1, 1);
@@ -933,6 +877,23 @@ header img {
 #contactoComienzo .coMensaje .form-floating .mensaje {
   resize: none;
   height: 20vh;
+}
+
+#seccionError {
+  background-image: linear-gradient(to bottom, rgba(129, 96, 6, 0.993), rgba(214, 167, 12, 0.856));
+}
+#seccionError h1 {
+  font-size: 200px;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 8px;
+  text-shadow: 1px 1px 1px rgba(244, 248, 15, 0.877), 1px 2px 1px rgba(244, 248, 15, 0.877), 1px 3px 1px rgba(244, 248, 15, 0.877), 1px 4px 1px rgba(244, 248, 15, 0.877), 1px 5px 1px rgba(244, 248, 15, 0.877), 1px 6px 1px rgba(244, 248, 15, 0.877), 1px 7px 1px, 1px 8px 1px rgba(244, 248, 15, 0.877), 1px 9px 1px rgba(244, 248, 15, 0.877), 1px 10px 1px rgba(244, 248, 15, 0.877), 1px 18px 6px rgba(16, 14, 14, 0.4), 1px 22px 10px rgba(16, 14, 14, 0.2), 1px 25px 35px rgba(16, 14, 14, 0.2), 1px 30px 60px rgba(16, 14, 14, 0.4);
+}
+#seccionError h2 {
+  letter-spacing: 6px;
+  text-shadow: 1px 1px 1px rgba(244, 248, 15, 0.877), 1px 2px 1px rgba(244, 248, 15, 0.877), 1px 3px 1px rgba(244, 248, 15, 0.877), 1px 4px 1px rgba(244, 248, 15, 0.877), 1px 5px 1px rgba(244, 248, 15, 0.877), 1px 6px 1px rgba(244, 248, 15, 0.877), 1px 7px 1px, 1px 8px 1px rgba(244, 248, 15, 0.877), 1px 9px 1px rgba(244, 248, 15, 0.877), 1px 10px 1px rgba(244, 248, 15, 0.877), 1px 12px 4px rgba(16, 14, 14, 0.4), 1px 15px 8px rgba(16, 14, 14, 0.2), 1px 19px 15px rgba(16, 14, 14, 0.2), 1px 23px 28px rgba(16, 14, 14, 0.4);
+}
+#seccionError p {
+  text-shadow: 1px 1px 1px rgba(244, 248, 15, 0.877), 1px 2px 1px rgba(244, 248, 15, 0.877), 1px 3px 1px rgba(244, 248, 15, 0.877), 1px 4px 1px rgba(244, 248, 15, 0.877), 1px 5px 1px rgba(244, 248, 15, 0.877), 1px 7px 2px rgba(16, 14, 14, 0.4), 1px 8px 4px rgba(16, 14, 14, 0.2), 1px 9px 11px rgba(16, 14, 14, 0.2), 1px 12px 15px rgba(16, 14, 14, 0.4);
 }
 
 #btn-mas {
@@ -952,7 +913,8 @@ header img {
   z-index: 9000;
 }
 
-.redes a:hover, .btn-mas span:hover {
+.redes a:hover,
+.btn-mas span:hover {
   background-color: rgb(200, 241, 13);
   color: rgb(11, 1, 1);
 }
@@ -976,7 +938,8 @@ header img {
 }
 
 @media (max-width: 768px) {
-  .superb .redes a, .superb .btn-mas span {
+  .superb .redes a,
+  .superb .btn-mas span {
     line-height: 40px;
     box-shadow: 6px 1px 8px rgba(0, 0, 0, 0.4);
     height: 40px;
@@ -997,7 +960,8 @@ header img {
   }
 }
 @media (max-width: 576px) {
-  .superb .redes a, .superb .btn-mas span {
+  .superb .redes a,
+  .superb .btn-mas span {
     line-height: 36px;
     box-shadow: 4px 1px 6px rgba(0, 0, 0, 0.4);
     height: 36px;
@@ -1031,6 +995,18 @@ header img {
   background-color: rgb(226, 230, 15);
   color: rgb(11, 1, 1);
   border: 2px solid rgb(11, 1, 1);
+}
+
+.botonError input {
+  background-color: rgb(11, 1, 1);
+  color: rgb(226, 230, 15);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 3px solid rgb(226, 230, 15);
+}
+.botonError input:hover {
+  background-color: rgb(226, 230, 15);
+  color: rgb(11, 1, 1);
+  border: 3px solid rgb(11, 1, 1);
 }
 
 footer {
@@ -1100,19 +1076,19 @@ footer .newle {
     margin-left: 1vw;
   }
 }
-footer .newle h6 {
+footer .newle h5 {
   font-size: 2.1rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: rgb(226, 230, 15);
   text-decoration: underline;
 }
 @media (max-width: 992px) {
-  footer .newle h6 {
+  footer .newle h5 {
     font-size: 1.7rem;
   }
 }
 @media (max-width: 480px) {
-  footer .newle h6 {
+  footer .newle h5 {
     font-size: 1.4rem;
   }
 }

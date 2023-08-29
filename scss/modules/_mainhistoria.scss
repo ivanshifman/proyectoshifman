@@ -10,7 +10,6 @@
 .contenedorTotalHisto {
     .row {
         .cartaHistoria {
-            font-size: 25rem;
             margin-top: 10vh;
             box-shadow: 2px 2px 8px map-get($colores, negrofiltro);
             transition: all 500ms ease;
@@ -21,11 +20,11 @@
                 margin-top: 5vh;
             }
             .imagenCartaHisto {
-                @include aya(20rem, 100%);
+                @include aya(30rem, 100%);
                 filter: brightness(80%);
             }
             .DobleCartaHisto {
-                h3 {
+                h2 {
                     color: map-get($colores, amarillodos);
                     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 }
@@ -48,7 +47,7 @@
                 border-bottom: 5px solid map-get($colores, negro);
             }
             .parImgHisto {
-                h3 {
+                h2 {
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
                     color: map-get($colores, amarillodos);
                 }
@@ -65,7 +64,7 @@
     background-image: map-get($colores, fondodos);
     height: 75vh;
     .ultimoTituloHisto {
-        h4 {
+        h3 {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
     }

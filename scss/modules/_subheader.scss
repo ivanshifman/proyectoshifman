@@ -2,7 +2,7 @@
 .principal {
     @extend %titulo;
     overflow: hidden;
-    background-image: url(https://www.mantelacuadros.com/wp-content/uploads/2019/10/portada-chocolate-claudio-corallo-mejor-chocolate-mundo.jpg);
+    background-image: url("../img/portadaindex.webp");
     .subprin {
         @include flexbox(column, center, center);
         overflow: hidden;
@@ -17,13 +17,15 @@
             text-align: center;
             font-size: 4.3rem;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
         }
-        h2 {
+        p {
             font-size: 2.2rem;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: map-get($colores, blanco);
             z-index: 3;
             text-align: center;
+            font-weight: 700;
         }
     }
 }
@@ -31,10 +33,10 @@
     .principal {
         .subprin {
             .titulo {
-                font-size: 3.2rem;
+                font-size: 4.2rem;
             }
-            h2 {
-                font-size: 1.6rem;
+            p {
+                font-size: 2rem;
             }
         }
     }
@@ -43,10 +45,10 @@
     .principal {
         .subprin {
             .titulo {
-                font-size: 2.2rem;
+                font-size: 3.5rem;
             }
-            h2 {
-                font-size: 0.9rem;
+            p {
+                font-size: 1.6rem;
             }
         }
     }
@@ -54,16 +56,14 @@
 //subheaderRestantes
 .productoProd {
     @extend %titulo;
-    background-image: url(https://img2.rtve.es/imagenes/10-cosas-sabias-sobre-chocolate/1674817846688.jpg);
+    background-image: url("../img/portadaprod.webp");
     .subProductoProd {
         height: 50vh;
         background-color: map-get($colores, negrofiltro);
         h1 {
-            font-size: 4.3rem;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        h2 {
-            font-size: 2.2rem;
+        p {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
     }
@@ -73,39 +73,19 @@
         height: 40vh;
         .subProductoProd {
             height: 40vh;
-            h1 {
-                font-size: 3rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
           }
       }
 }
-@include responsive(480px) {
-    .productoProd {
-        .subProductoProd {
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1rem;
-            }
-        }
-    }
-}
 .tituloHistoria {
     @extend %titulo;
-    background-image: url(https://px.fotos.cdn.0223.com.ar/f/082022/1659463256170.webp?cw=1070&ch=602&extw=jpeg);
+    background-image: url("../img/portadahisto.webp");
     .subTituloHisto {
         height: 50vh;
         background-color: map-get($colores, negrofiltro);
         h1 {
-            font-size: 4.3rem;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        h2 {
-            font-size: 2.2rem;
+        p {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
     }
@@ -115,39 +95,19 @@
         height: 40vh;
         .subTituloHisto {
             height: 40vh;
-            h1 {
-                font-size: 3rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
           }
       }
 }
-@include responsive(480px) {
-    .tituloHistoria {
-        .subTituloHisto {
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1rem;
-            }
-        }
-    }
-}
 .tituloPreg {
     @extend %titulo;
-    background-image: url(https://www.delicias.tv/blog/wp-content/uploads/2016/11/Chocolate-Portada.jpg);
+    background-image: url("../img/portadapreg.webp");
     .subTituloPreg {
         height: 50vh;
         background-color: map-get($colores, negrofiltro);
         h1 {
-            font-size: 4.3rem;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        h2 {
-            font-size: 2.2rem;
+        p {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
     }
@@ -157,39 +117,19 @@
         height: 40vh;
         .subTituloPreg {
             height: 40vh;
-            h1 {
-                font-size: 3rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
           }
       }
 }
-@include responsive(480px) {
-    .tituloPreg {
-        .subTituloPreg {
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1rem;
-            }
-        }
-    }
-}
 .tituloContacto {
     @extend %titulo;
-    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/531/524/desktop-wallpaper-chocolate-bar.jpg);
+    background-image: url("../img/portadacontac.webp");
     .subTituloContacto {
         height: 50vh;
         background-color: map-get($colores, negrofiltro);
         h1 {
-            font-size: 4.3rem;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        h2 {
-            font-size: 2.2rem;
+        p {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
     }
@@ -199,24 +139,6 @@
         height: 40vh;
         .subTituloContacto {
             height: 40vh;
-            h1 {
-                font-size: 3rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
           }
       }
-}
-@include responsive(480px) {
-    .tituloContacto {
-        .subTituloContacto {
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1rem;
-            }
-        }
-    }
 }

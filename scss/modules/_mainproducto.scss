@@ -13,13 +13,13 @@
         }
   
         img.imagenCarta {
-          height: 15rem;
+          height: 30rem;
           width: 100%;
         }
   
         .DobleCartaProd {
   
-          h3.tituloCartaProd {
+          h2.tituloCartaProd {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             color: map-get($colores, amarillodos);
           }
@@ -37,7 +37,7 @@
   padding-bottom: 15vh;
   .novedadProd {
     background-color: map-get($colores, negro);
-    h4 {
+    h3 {
       color: map-get($colores, amarillodos);
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
@@ -45,17 +45,17 @@
   .galeriaProduc {
     .row {
       .imagenGrilla {
-        @include aya(30vh, 35vw);
-        @include responsive(480px) {
+        @include aya(50vh, 40vw);
+        @include responsive(576px) {
           @include aya(40vh, 80vw);
         }
         img {
           @include aya(100%, 100%);
           border: 3px solid map-get($colores, negro);
           filter: brightness(60%);
+          object-fit: cover;
         }
       }
     }
   }
-}
-  
+} 

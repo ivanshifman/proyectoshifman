@@ -16,7 +16,7 @@
         @include flexbox(row, center, center);
         padding: 5px 0 5px 0;
         grid-area: triple;
-        h3 {
+        h2 {
             font-size: 2.8rem;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: map-get($colores, amarillocinco);
@@ -43,7 +43,7 @@
                 }
                 .capauno {
                     @extend %capasIndex;
-                    h4 {
+                    h3 {
                         text-decoration: underline;
                         font-size: 2.3rem;
                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -58,7 +58,7 @@
         .paruno {
             height: 100%;
             @include flexbox(column, center, space-evenly);
-            h4 {
+            h3 {
                 @extend %parIndH;
             }
             p {
@@ -86,7 +86,7 @@
                 }
                 .capados {
                     @extend %capasIndex;
-                    h4 {
+                    h3 {
                         text-decoration: underline;
                         font-size: 2.3rem;
                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -101,7 +101,7 @@
         .pardos {
             height: 100%;
             @include flexbox(column, center, space-evenly);
-            h4 {
+            h3 {
                 @extend %parIndH;
             }
             p {
@@ -129,7 +129,7 @@
                 }
                 .capatres {
                     @extend %capasIndex;
-                    h4 {
+                    h3 {
                         text-decoration: underline;
                         font-size: 2.3rem;
                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -144,7 +144,7 @@
         .partres {
             height: 100%;
             @include flexbox(column, center, space-evenly);
-            h4 {
+            h3 {
                 @extend %parIndH;
             }
             p {
@@ -160,7 +160,7 @@
         row-gap: 20vh;
         .triplecont {
             padding: 3px 0 3px 0;
-            h3 {
+            h2 {
                 font-size: 2.2rem;
             }
         }
@@ -172,7 +172,7 @@
                 .primeri {
                     width: 100%;
                     .capauno {
-                        h4 {
+                        h3 {
                             font-size: 2.5rem;
                         }
                         p {
@@ -182,7 +182,7 @@
                 }
             }
             .paruno {
-                h4 {
+                h3 {
                     font-size: 2.5rem;
                 }
                 p {
@@ -199,7 +199,7 @@
                 .segundi {
                     width: 100%;
                     .capados {
-                        h4 {
+                        h3 {
                             font-size: 2.5rem;
                         }
                         p {
@@ -209,7 +209,7 @@
                 }
             }
             .pardos {
-                h4 {
+                h3 {
                     font-size: 2.5rem;
                 }
                 p {
@@ -226,7 +226,7 @@
                 .terceri {
                     width: 100%;
                     .capatres {
-                        h4 {
+                        h3 {
                             font-size: 2.5rem;
                         }
                         p {
@@ -236,7 +236,7 @@
                 }
             }
             .partres {
-                h4 {
+                h3 {
                     font-size: 2.5rem;
                 }
                 p {
@@ -253,7 +253,7 @@
         row-gap: 10vh;
         .triplecont {
             padding: 0px;
-            h3 {
+            h2 {
                 font-size: 1.8rem;
             }
         }
@@ -263,7 +263,7 @@
                 .primeri {
                     height: 100%;
                     .capauno {
-                        h4 {
+                        h3 {
                             font-size: 1.8rem;
                         }
                         p {
@@ -273,7 +273,7 @@
                 }
             }
             .paruno {
-                h4 {
+                h3 {
                     font-size: 2.2rem;
                 }
                 p {
@@ -288,7 +288,7 @@
                 .segundi {
                     height: 100%;
                     .capados {
-                        h4 {
+                        h3 {
                             font-size: 1.8rem;
                         }
                         p {
@@ -298,7 +298,7 @@
                 }
             }
             .pardos {
-                h4 {
+                h3 {
                     font-size: 2.2rem;
                 }
                 p {
@@ -313,7 +313,7 @@
                 .terceri {
                     height: 100%;
                     .capatres {
-                        h4 {
+                        h3 {
                             font-size: 1.8rem;
                         }
                         p {
@@ -323,7 +323,7 @@
                 }
             }
             .partres {
-                h4 {
+                h3 {
                     font-size: 2.2rem;
                 }
                 p {
@@ -409,11 +409,11 @@
   
     .IndexProducto {
       grid-area: indexProducto;
-      background-image: url(https://img.freepik.com/fotos-premium/chocolates-surtidos-colocan-paleta-artistica-sobre-fondo-madera-calida_436767-117.jpg?w=2000);
+      background-image: url("../img/portadaindprod.webp");
       @extend %indexPH;
       @include flexbox(column,center,center);
   
-      h5 {
+      h4 {
         @extend %indexPH2h;
       }
   
@@ -437,7 +437,7 @@
       background-color: map-get($colores, negro);
       @include flexbox(row, center, center);
   
-      h5 {
+      h4 {
         font-size: 4rem;
         color: map-get($colores, amarillodos);
         font-weight: 400;
@@ -447,11 +447,11 @@
   
     .IndexHistoria {
       grid-area: IndexHistoria;
-      background-image: url(https://media.ambito.com/p/5206e614d0b455aec270efe4ab2843dd/adjuntos/239/imagenes/039/619/0039619740/1200x675/smart/chocolate.jpg);
+      background-image: url("../img/portadaindhis.webp");
       @extend %indexPH;
       @include flexbox(column,center,center);
   
-      h5 {
+      h4 {
         @extend %indexPH2h;
       }
   
@@ -471,7 +471,7 @@
     }
   
     @media (max-width: 768px) {
-      .IndexProducto h5, .IndexHistoria h5 {
+      .IndexProducto h4, .IndexHistoria h4 {
         font-size: 2.4rem;
       }
   
@@ -490,13 +490,13 @@
         }
       }
   
-      .seguirIndex h5 {
+      .seguirIndex h4 {
         font-size: 3rem;
       }
     }
   
     @media (max-width: 480px) {
-      .IndexProducto h5, .IndexHistoria h5 {
+      .IndexProducto h4, .IndexHistoria h4 {
         font-size: 1.9rem;
       }
   
@@ -511,7 +511,7 @@
         font-size: 1.3rem;
       }
   
-      .seguirIndex h5 {
+      .seguirIndex h4 {
         font-size: 2.4rem;
       }
     }

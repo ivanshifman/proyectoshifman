@@ -17,6 +17,9 @@
                             background-color: map-get($colores, amarillodos);
                             color: map-get($colores, negro);
                         }
+                        &:focus {
+                            outline: 2px solid map-get($colores, amarilloespecial);
+                        }
                     }
                 }
                 .accordion-collapse {
