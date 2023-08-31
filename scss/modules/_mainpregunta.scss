@@ -20,6 +20,7 @@
                         }
                         &:focus {
                             border: 2px solid map-get($colores, amarilloespecial);
+                            box-shadow: none;
                         }
                     }
                 }

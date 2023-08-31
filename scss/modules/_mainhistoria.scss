@@ -22,6 +22,7 @@
             .imagenCartaHisto {
                 @include aya(30rem, 100%);
                 filter: brightness(80%);
+                object-fit: cover;
             }
             .DobleCartaHisto {
                 h2 {
@@ -45,6 +46,7 @@
                 filter: brightness(60%);
                 border-top: 5px solid map-get($colores, negro);
                 border-bottom: 5px solid map-get($colores, negro);
+                object-fit: cover;
             }
             .parImgHisto {
                 h2 {

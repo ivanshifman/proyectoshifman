@@ -15,6 +15,7 @@
         img.imagenCarta {
           height: 30rem;
           width: 100%;
+          object-fit: cover;
         }
   
         .DobleCartaProd {
@@ -45,9 +46,9 @@
   .galeriaProduc {
     .row {
       .imagenGrilla {
-        @include aya(50vh, 40vw);
+        @include aya(40vh, 40vw);
         @include responsive(576px) {
-          @include aya(40vh, 80vw);
+          @include aya(30vh, 80vw);
         }
         img {
           @include aya(100%, 100%);
